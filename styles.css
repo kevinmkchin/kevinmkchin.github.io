@@ -61,10 +61,13 @@ header {
     color: white;
     font-family: "Abel";
     font-size: 20px;
+	
+    transition: 0.3s ease;
 }
 
 .navigation a li:hover{
     color: gold;
+	font-size:23px;
 }
 
 main {
@@ -237,7 +240,8 @@ body a{
 
 .card-text{
     grid-area: text;
-    margin: 20px;
+	font-size: 15px;
+    margin: 25px;
 }
 
 .card-type{
