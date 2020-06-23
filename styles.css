@@ -94,7 +94,14 @@ body a{
     font-family: "DidactGothic";
     text-align: left;
     color: white;
-    width: 800px;
+    width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.mytext a{
+	color: lightskyblue;
+	text-shadow: 2px 2px #000000;
 }
 
 .mytext p{
@@ -113,7 +120,6 @@ body a{
 }
 
 .dof{
-    padding-left:40%;
 }
 
 .dof ul li{
@@ -187,19 +193,19 @@ body a{
 }
 
 .card:nth-of-type(2) .card-image{
-    background: url("bambuu.png");
+    background: url("thumbnails/bambuu.png");
     background-size: 100px;
     
 }
 
 .card:nth-of-type(3) .card-image{
-    background: url("fhello.jpg");
+    background: url("thumbnails/fhello.jpg");
     background-position: 40%;
     background-size: cover;
 }
 
 .card:nth-of-type(4) .card-image{
-    background: url("ajax.png");
+    background: url("thumbnails/ajax.png");
     background-position-y: -7px;
     background-size: cover;
 }
@@ -211,7 +217,7 @@ body a{
 }
 
 .card:nth-of-type(6) .card-image{
-    background: url("context.PNG");
+    background: url("thumbnails/context.PNG");
     background-size: cover;
 }
 
@@ -221,19 +227,19 @@ body a{
 }
 
 .card:nth-of-type(8) .card-image{
-    background: url("voiceox.PNG");
+    background: url("thumbnails/voicebox.PNG");
     background-position-x: -95px;
     background-size: cover;
 }
 
 .card:nth-of-type(9) .card-image{
-    background: url("descension.PNG");
+    background: url("thumbnails/descension.PNG");
     background-position-x: -10px;
     background-size: cover;
 }
 
 .card:nth-of-type(10) .card-image{
-    background: url("standby.jpg");
+    background: url("thumbnails/standby.jpg");
     background-size: cover;
 }
 
