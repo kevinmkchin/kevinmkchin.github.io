@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: block;
+
+}
+
+.inner-header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 32px;
+    font-family: "Abel";
+}
+
+.logo-container h1 a{
+    color: white;
+    font-size: 32px;
+    font-family: "Abel";
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: "Abel";
+    font-size: 20px;
+}
+
+.navigation a li:hover{
+    color: gold;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display:table-cell;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image:url("bg1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+
+body a{
+    color: lightskyblue;
+}
+
+.mytext{
+    font-family: "Abel";
+    text-align: left;
+    color: white;
+    width: 800px;
+}
+
+.mytext p{
+    font-size: 20px;
+}
+
+.mytext2{
+    font-family: "Abel";
+    text-align: left;
+    color: white;
+    width: 1100px;
+}
+
+.mytext2 p{
+    font-size: 20px;
+}
+
+.dof{
+    padding-left:40%;
+}
+
+.dof ul li{
+    list-style-type: disc;
+}
+
+.i {
+    border-radius:100px;
+    float: left;
+    margin-right: 25px;
+}
+
+.face {
+    padding-left: 25%;
+    width: 800px;
+    display: inline-block;
+    padding-top: 3.5%;
+    padding-bottom: 20px;
+}
+
+.face p{
+    font-family: "Abel";
+    font-size: 20px;
+    color: white;
+}
+
+
+.cards{
+    padding-left: 16%;
+    width: 1100px;
+    display: inline-block;
+}
+
+.card {
+    float: left;
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 40px;
+    grid-template-areas: "image" "text" "type";
+
+    font-family: "Abel";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card-image{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card:nth-of-type(1) .card-image{
+    background: url("dof/ss.jpg");
+    background-position: 45%;
+    background-size: cover;
+}
+
+.card:nth-of-type(2) .card-image{
+    background: url("bambuu.png");
+    background-size: 100px;
+    
+}
+
+.card:nth-of-type(3) .card-image{
+    background: url("fhello.jpg");
+    background-position: 40%;
+    background-size: cover;
+}
+
+.card:nth-of-type(4) .card-image{
+    background: url("ajax.png");
+    background-position-y: -7px;
+    background-size: cover;
+}
+
+.card:nth-of-type(5) .card-image{
+    background: url("rapture/mc1.png");
+    background-position-y: -8px;
+    background-size: cover;
+}
+
+.card:nth-of-type(6) .card-image{
+    background: url("context.PNG");
+    background-size: cover;
+}
+
+.card:nth-of-type(7) .card-image{
+    background: url("raycasting/rayss.png");
+    background-size: cover;
+}
+
+.card:nth-of-type(8) .card-image{
+    background: url("voiceox.PNG");
+    background-position-x: -95px;
+    background-size: cover;
+}
+
+.card:nth-of-type(9) .card-image{
+    background: url("descension.PNG");
+    background-position-x: -10px;
+    background-size: cover;
+}
+
+.card:nth-of-type(10) .card-image{
+    background: url("standby.jpg");
+    background-size: cover;
+}
+
+
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-type{
+    grid-area: type;   
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.project-table{
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 600px;
+    font-size: 0.6cm;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.project-table thead tr{
+    background-color: gold;
+    text-align: left;
+    font-weight: bold;
+}
+
+.project-table th,
+.project-table td{
+
+    padding: 10px 13px;
+}
+
+.project-table tbody tr{
+    border-bottom: 1px solid lightgrey;
+}
+
+.project-table tbody tr:last-of-type{
+    border-bottom: 2px solid gold;
+}
+
+.project-table tbody tr a{
+    color: gold;
+}
+
+
+footer p{
+
+    font-family: "Abel";
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
