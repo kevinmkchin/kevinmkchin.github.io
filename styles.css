@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DidactGothic";
+    src: url("fonts/DidactGothic.woff") format('woff');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ header {
     width: 100%;
     height: 100px;
     display: block;
-
+	margin-bottom: 10px;
 }
 
 .inner-header {
@@ -29,14 +34,11 @@ header {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    color: white;
-    font-size: 32px;
-    font-family: "Abel";
 }
 
 .logo-container h1 a{
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     font-family: "Abel";
 }
 
@@ -74,7 +76,8 @@ main {
 }
 
 body {
-    background-image:url("bg1.png");
+    /*background-image:url("offwhite.png");*/
+	background-color: #b3ccb3;/*#85adad;*/
     background-size: cover;
     background-attachment: fixed;
     background-position-y: center;
@@ -85,7 +88,7 @@ body a{
 }
 
 .mytext{
-    font-family: "Abel";
+    font-family: "DidactGothic";
     text-align: left;
     color: white;
     width: 800px;
@@ -96,7 +99,7 @@ body a{
 }
 
 .mytext2{
-    font-family: "Abel";
+    font-family: "DidactGothic";
     text-align: left;
     color: white;
     width: 1100px;
@@ -128,15 +131,21 @@ body a{
 }
 
 .face p{
-    font-family: "Abel";
+    font-family: "DidactGothic";
     font-size: 20px;
     color: white;
+}
+
+.section-headers{
+	font-family: "DidactGothic";
+    color: white;
+	margin-bottom: 20px;
 }
 
 .cards{
 	margin-left:auto;
 	margin-right:auto;
-    width: 1100px;
+    width: 1030px;
 }
 
 .card {
@@ -152,7 +161,7 @@ body a{
     grid-template-rows: 210px 210px 40px;
     grid-template-areas: "image" "text" "type";
 
-    font-family: "Abel";
+    font-family: "DidactGothic";
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -228,7 +237,7 @@ body a{
 
 .card-text{
     grid-area: text;
-    margin: 25px;
+    margin: 20px;
 }
 
 .card-type{
@@ -283,5 +292,6 @@ footer p{
     font-size: 20px;
     color: white;
     text-align: center;
+	padding-bottom: 25px;
 
 }
