@@ -68,9 +68,9 @@ header {
 main {
     width: 100%;
     height: auto;
-    display:table-cell;
     align-items: center;
     justify-content: center;
+	display: inline-block;
 }
 
 body {
@@ -121,11 +121,10 @@ body a{
 }
 
 .face {
-    padding-left: 25%;
+	margin-left:auto;
+	margin-right:auto;
     width: 800px;
-    display: inline-block;
-    padding-top: 3.5%;
-    padding-bottom: 20px;
+	margin-bottom: 100px;
 }
 
 .face p{
@@ -134,11 +133,10 @@ body a{
     color: white;
 }
 
-
 .cards{
-    padding-left: 16%;
+	margin-left:auto;
+	margin-right:auto;
     width: 1100px;
-    display: inline-block;
 }
 
 .card {
@@ -285,6 +283,5 @@ footer p{
     font-size: 20px;
     color: white;
     text-align: center;
-    padding-bottom: 20px;
 
 }
