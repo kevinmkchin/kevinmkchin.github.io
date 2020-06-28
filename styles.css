@@ -99,6 +99,10 @@ body a{
 	margin-right:auto;
 }
 
+.mytext li{
+    font-size: 20px;
+}
+
 .mytext a{
 	color: lightskyblue;
 	text-shadow: 2px 2px #000000;
@@ -136,7 +140,7 @@ body a{
 	margin-left:auto;
 	margin-right:auto;
     width: 800px;
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 }
 
 .face p{
@@ -144,6 +148,7 @@ body a{
     font-size: 20px;
     color: white;
 }
+
 
 .section-headers{
 	font-family: "DidactGothic";
@@ -154,7 +159,7 @@ body a{
 .cards{
 	margin-left:auto;
 	margin-right:auto;
-    width: 1030px;
+    width: 1060px;
 }
 
 .card {
@@ -176,6 +181,7 @@ body a{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
 
+
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -184,6 +190,7 @@ body a{
     grid-area: image;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+	
 }
 
 .card:nth-of-type(1) .card-image{
@@ -198,6 +205,11 @@ body a{
     
 }
 
+.card:nth-of-type(3){
+	border-style: solid;
+	border-width: 6px;
+	border-color: gold;
+}
 .card:nth-of-type(3) .card-image{
     background: url("thumbnails/fhello.jpg");
     background-position: 40%;
@@ -205,14 +217,15 @@ body a{
 }
 
 .card:nth-of-type(4) .card-image{
-    background: url("thumbnails/ajax.png");
-    background-position-y: -7px;
+    background: url("rapture/arx1.png");
+    background-position-x: -25px;
+    background-position-y: -5px;
     background-size: cover;
 }
 
 .card:nth-of-type(5) .card-image{
-    background: url("rapture/mc1.png");
-    background-position-y: -8px;
+    background: url("thumbnails/ajax.png");
+    background-position-y: -6px;
     background-size: cover;
 }
 
