@@ -80,7 +80,7 @@ main {
 
 body {
     /*background-image:url("offwhite.png");*/
-	background-color: #b3ccb3;/*#85adad;*/
+	background-color: #36454f;/*#b3ccb3;*//*#85adad;*/
     background-size: cover;
     background-attachment: fixed;
     background-position-y: center;
@@ -140,7 +140,7 @@ body a{
 	margin-left:auto;
 	margin-right:auto;
     width: 800px;
-	margin-bottom: 90px;
+	margin-bottom: 110px;
 }
 
 .face p{
@@ -148,7 +148,6 @@ body a{
     font-size: 20px;
     color: white;
 }
-
 
 .section-headers{
 	font-family: "DidactGothic";
@@ -192,70 +191,6 @@ body a{
     border-top-right-radius: 15px;
 	
 }
-
-.card:nth-of-type(1) .card-image{
-    background: url("dof/ss.jpg");
-    background-position: 45%;
-    background-size: cover;
-}
-
-.card:nth-of-type(2) .card-image{
-    background: url("thumbnails/bambuu.png");
-    background-size: 100px;
-    
-}
-
-.card:nth-of-type(3){
-	border-style: solid;
-	border-width: 6px;
-	border-color: gold;
-}
-.card:nth-of-type(3) .card-image{
-    background: url("thumbnails/fhello.jpg");
-    background-position: 40%;
-    background-size: cover;
-}
-
-.card:nth-of-type(4) .card-image{
-    background: url("rapture/arx1.png");
-    background-position-x: -25px;
-    background-position-y: -5px;
-    background-size: cover;
-}
-
-.card:nth-of-type(5) .card-image{
-    background: url("thumbnails/ajax.png");
-    background-position-y: -6px;
-    background-size: cover;
-}
-
-.card:nth-of-type(6) .card-image{
-    background: url("thumbnails/context.PNG");
-    background-size: cover;
-}
-
-.card:nth-of-type(7) .card-image{
-    background: url("raycasting/rayss.png");
-    background-size: cover;
-}
-
-.card:nth-of-type(8) .card-image{
-    background: url("thumbnails/voicebox.PNG");
-    background-position-x: -95px;
-    background-size: cover;
-}
-
-.card:nth-of-type(9) .card-image{
-    background: url("thumbnails/descension.PNG");
-    background-position-x: -10px;
-    background-size: cover;
-}
-
-.card:nth-of-type(10) .card-image{
-    background: url("thumbnails/standby.jpg");
-    background-size: cover;
-}
-
 
 .card-text{
     grid-area: text;

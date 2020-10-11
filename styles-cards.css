@@ -1,0 +1,61 @@
+#comingsoon .card-image{
+	background: url("thumbnails/coming-soon.png");
+    background-size: cover;
+}
+
+#dof .card-image{
+    background: url("dof/ss.jpg");
+    background-position: 45%;
+    background-size: cover;
+}
+
+#bambuu .card-image{
+    background: url("thumbnails/bambuu.png");
+    background-size: 100px;
+    
+}
+
+#first-hello .card-image{
+    background: url("thumbnails/fhello.jpg");
+    background-position: 40%;
+    background-size: cover;
+}
+
+#arx-opengl .card-image{
+    background: url("thumbnails/arx.png");
+    background-position-x: -25px;
+    background-size: cover;
+}
+
+#ajax3d .card-image{
+    background: url("thumbnails/ajax.png");
+    background-size: cover;
+}
+
+#context .card-image{
+    background: url("thumbnails/context.PNG");
+    background-size: cover;
+}
+
+#raycast-demo .card-image{
+    background: url("raycasting/rayss.png");
+    background-size: cover;
+}
+
+#voicebox .card-image{
+    background: url("thumbnails/voicebox.PNG");
+    background-position-x: -95px;
+    background-size: cover;
+}
+
+#descension .card-image{
+    background: url("thumbnails/descension.PNG");
+    background-position-x: -10px;
+    background-size: cover;
+}
+
+#settlers .card-image
+{
+	background: url("settlers/settlers-of-the-rapture.png");
+    background-size: cover;
+}
