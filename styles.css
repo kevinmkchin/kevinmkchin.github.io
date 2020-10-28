@@ -14,7 +14,7 @@
 .sidenav 
 {
   height: 100%;
-  width: 440px;
+  width: 23%;/*440px;*/
   position: fixed;
   z-index: 1;
   top: 0;
@@ -51,9 +51,13 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
+.sidenav img
+{
+	width:90%;
+	height:90%;
+}
 .sidenav #logo {
-	padding: 0px 20px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 .sidenav #logo:hover {
     transform: scale(1.05);
@@ -64,7 +68,7 @@
 }
 
 main {
-	margin-left: 460px; /* Same as the width of the sidenav */
+	margin-left: 24%; /* Same as the width of the sidenav */
 	display: inline-block;
 }
 
@@ -123,6 +127,33 @@ body a{
 .cards{
     width: 1060px;
 }
+
+@media (max-width: 1400px)
+{
+	.cards
+	{
+		width: 700px;
+	}
+	
+	.sidenav 
+	{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 940px)
+{
+	.cards
+	{
+		width: 360px;
+	}
+	
+	.sidenav 
+	{
+		font-size: 12px;
+	}
+}
+
 
 .card {
     float: left;
