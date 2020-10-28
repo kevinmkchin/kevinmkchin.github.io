@@ -11,11 +11,33 @@
     text-decoration: none;
 }
 
+#wrapper {
+  display: flex;
+}
+
+#left {
+  flex: 0 0 23%;
+}
+
+#right {
+  flex: 1;
+}
+
+body {
+    background-image:url("bgs/prism.png");
+	background-repeat: repeat;
+	background-size: auto;
+    background-attachment: fixed;
+    background-position-y: center;
+	
+	display: flex;
+}
+
 .sidenav 
 {
   height: 100%;
   width: 23%;/*440px;*/
-  position: fixed;
+ /* position: fixed;*/
   z-index: 1;
   top: 0;
   left: 0
@@ -29,10 +51,8 @@
 
 .madeby 
 {
-	position:absolute;
-	bottom:0;
-	right:0;
 	font-size: 15px;
+	padding-top: 100px;
 	padding-right: 0px;
 	padding-bottom: 10px;
 }
@@ -68,16 +88,8 @@
 }
 
 main {
-	margin-left: 24%; /* Same as the width of the sidenav */
+	margin-left: 20px;
 	display: inline-block;
-}
-
-body {
-    background-image:url("bgs/prism.png");
-	background-repeat: repeat;
-	background-size: auto;
-    background-attachment: fixed;
-    background-position-y: center;
 }
 
 body a{
@@ -89,8 +101,7 @@ body a{
     text-align: left;
     color: white;
     width: 900px;
-	margin-left:auto;
-	margin-right:auto;
+	margin-left: 20px;
 }
 
 .mytext li{
