@@ -3,6 +3,13 @@
     background-size: cover;
 }
 
+#adk .card-image{
+    background: url("adk/adkss1.png");
+    background-position: 40%;
+	background-position-y: 20%;
+    background-size: 700px;
+}
+
 #dof .card-image{
     background: url("dof/ss.jpg");
     background-position: 45%;
