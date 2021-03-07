@@ -1,212 +1,105 @@
 @font-face {
-    font-family: "DidactGothic";
-    src: url("fonts/DidactGothic.woff") format('woff');
+  font-family: "VGA437";
+  src: url("fonts/Perfect DOS VGA 437.ttf");
 }
 
 *{
-    font-family: "DidactGothic";
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-#wrapper {
-  display: flex;
-}
-
-#left {
-  flex: 0 0 23%;
-}
-
-#right {
-  flex: 1;
-}
-
-body {
-    background-image:url("bgs/prism.png");
-	background-repeat: repeat;
-	background-size: auto;
-    background-attachment: fixed;
-    background-position-y: center;
-	
-	display: flex;
-}
-
-.sidenav 
-{
-  height: 100%;
-  width: 23%;/*440px;*/
- /* position: fixed;*/
-  z-index: 1;
-  top: 0;
-  left: 0
-  overflow-x: hidden;
-  background-color: #FFFCEF;
-  
-  font-size: 18px;
-  text-align: center;
-  color: #4f4f4f;
-}
-
-.madeby 
-{
-	font-size: 15px;
-	padding-top: 100px;
-	padding-right: 0px;
-	padding-bottom: 10px;
-}
-
-.sidenav a 
-{
-	padding: 20px 10px 6px 0px;
-	text-decoration: underline;
-	font-size: 22px;
-	color: #818181;
-	display: block;
-}
-
-.sidenav p 
-{
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.sidenav img
-{
-	width:90%;
-	height:90%;
-}
-.sidenav #logo {
-	padding: 0px 0px 0px 0px;
-}
-.sidenav #logo:hover {
-    transform: scale(1.05);
-}
-
-.sidenav a:hover {
-  color: #FFD700;
+  font-family: "VGA437";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 main {
-	margin-left: 20px;
-	display: inline-block;
-}
 
+}
+body {
+  background-color: #2D2A2E;
+}
 body a{
-    color: lightskyblue;
+    color: #FF6188;
 }
 
-.mytext{
-    font-family: "DidactGothic";
-    text-align: left;
-    color: white;
-    width: 900px;
-	margin-left: 20px;
-}
-
-.mytext li{
-    font-size: 20px;
-}
-
-.mytext a{
-	color: lightskyblue;
-	text-shadow: 2px 2px #000000;
-}
-
-.mytext p{
-    font-size: 20px;
-}
-
-.mytext2{
-    font-family: "DidactGothic";
-    text-align: left;
-    color: white;
-    width: 1100px;
-}
-
-.mytext2 p{
-    font-size: 20px;
-}
-
-.dof{
-}
-
-.dof ul li{
-    list-style-type: disc;
-}
-
+/* CARDS */
 .cards{
-    width: 1060px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 1200px;
 }
-
-@media (max-width: 1400px)
+@media (max-width: 1230px)
 {
-	.cards
-	{
-		width: 700px;
-	}
-	
-	.sidenav 
-	{
-		font-size: 14px;
-	}
+  .cards
+  {
+    width: 800px;
+  }
 }
-
-@media (max-width: 940px)
+@media (max-width: 830px)
 {
-	.cards
-	{
-		width: 360px;
-	}
-	
-	.sidenav 
-	{
-		font-size: 12px;
-	}
+  .cards
+  {
+    width: 400px;
+  }
 }
-
-
 .card {
-    float: left;
-    display: grid;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom:20px;
+  float: left;
+  display: grid;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
-    width: 300px;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 40px;
-    grid-template-areas: "image" "text" "type";
+  font-size: 16px;
 
-    font-family: "DidactGothic";
-    border-radius: 0px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
+  width: 400px;
+  height: 300px;
 
+  border-radius: 0px;
+  background: #2D2A2E;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
 
-    transition: 0.3s ease;
-    cursor: pointer;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-.card-image{
-    grid-area: image;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
 .card-text{
-    grid-area: text;
-	font-size: 15px;
-    margin: 25px;
+  grid-area: text;
+  margin: 25px;
+  color: white;
+  text-shadow: 0px 0px 20px #000, 
+  0px 0px 20px #000, 0px 0px 20px #000, 
+  0px 0px 20px #000, 0px 0px 10px #000,
+  0px 0px 8px #000, 0px 0px 8px #000;
 }
-
-.card-type{
-    grid-area: type;   
+.card-text-about{
+  grid-area: text;
+  margin: 25px;
+  color: white;
 }
-
 .card:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transform: scale(1.4);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* sub pages */
+.mytext{
+  text-align: left;
+  color: white;
+  width: 854px;
+  padding-top: 25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.mytext ul li{
+  list-style-type: disc;
+}
+.mytext li{
+  font-size: 20px;
+}
+.mytext a{
+  color: #FF6188;
+  text-shadow: 2px 2px #000000;
+}
+.mytext p{
+  font-size: 20px;
 }
