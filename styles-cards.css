@@ -11,7 +11,7 @@
 }
 
 #dof {
-    background: url("dof/ss.jpg");
+    background: url("dof/dof.gif");
     background-position: 45%;
     background-size: cover;
 }
@@ -19,7 +19,7 @@
 #bambuu {
     background: url("bambuu/bb1.PNG");
     background-position: 60%;
-    background-size: 530px;
+    background-size: 540px;
 }
 
 #whiplash {
@@ -41,7 +41,7 @@
 }
 
 #ajax3d {
-    background: url("thumbnails/ajax.png");
+    background: url("ajax3d/ajax.gif");
     background-size: cover;
 }
 
@@ -62,7 +62,7 @@
 }
 
 #descension {
-    background: url("thumbnails/descension.PNG");
+    background: url("thumbnails/descension.gif");
     background-position-x: -10px;
     background-size: cover;
 }

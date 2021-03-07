@@ -21,6 +21,20 @@ body a{
     color: #FF6188;
 }
 
+.goback{
+  background-color: #464147;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.goback:hover {
+  background-color: #948B96;
+  color: black;
+}
+
 /* CARDS */
 .cards{
   margin-left:auto;
@@ -86,7 +100,7 @@ body a{
   text-align: left;
   color: white;
   width: 854px;
-  padding-top: 25px;
+  padding-top: 0px;
   margin-left:auto;
   margin-right:auto;
 }
