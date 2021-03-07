@@ -21,20 +21,6 @@ body a{
     color: #FF6188;
 }
 
-.goback{
-  background-color: #464147;
-  color: white;
-  padding: 8px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-.goback:hover {
-  background-color: #948B96;
-  color: black;
-}
-
 /* CARDS */
 .cards{
   margin-left:auto;
@@ -116,4 +102,19 @@ body a{
 }
 .mytext p{
   font-size: 20px;
+}
+
+/* back button */
+.goback{
+  background-color: #464147;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.goback:hover {
+  background-color: #948B96;
+  color: black;
 }
