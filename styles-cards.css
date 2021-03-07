@@ -68,6 +68,7 @@
 }
 
 #settlers {
-	background: url("settlers/settlers-of-the-rapture.PNG");
+	background: url("settlers/settlers-thumb.gif");
+    background-position-x: -50%;
     background-size: cover;
 }
