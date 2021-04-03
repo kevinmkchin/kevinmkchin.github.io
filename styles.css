@@ -11,6 +11,12 @@
   text-decoration: none;
 }
 
+/*
+monokai
+lightpink:    #FF6188;
+lightyellow:  #FFD866;
+lightblue:    #76D8E4;
+*/
 main {
 
 }
@@ -20,27 +26,21 @@ body {
 body a{
     color: #FF6188;
 }
+body a:hover{
+    color: #FFD866;
+}
+body li {
+    display: inline;
+    font-size: 26px;
+    padding: 8px;
+}
 
 /* CARDS */
 .cards{
   margin-left:auto;
   margin-right:auto;
-  width: 1200px;
-}
-@media (max-width: 1230px)
-{
-  .cards
-  {
-    width: 800px;
-  }
-}
-@media (max-width: 830px)
-{
-  .cards
-  {
-    width: 400px;
-  }
-}
+  width: 560px;
+} 
 .card {
   float: left;
   display: grid;
@@ -49,37 +49,67 @@ body a{
   margin-top: 0px;
   margin-bottom: 0px;
 
-  font-size: 16px;
+  font-size: 18px;
 
-  width: 400px;
-  height: 300px;
+  width: 560px;
+  height: 250px;
 
   border-radius: 0px;
   background: #2D2A2E;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: left;
 
   transition: 0.3s ease;
   cursor: pointer;
 }
+@media (max-width: 590px)
+{
+  .cards
+  {
+    width: 400px;
+  }
+  .card
+  {
+    width: 400px;
+  }
+}
+.notcard
+{
+  height: 200px;
+  margin: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
 .card-text{
   grid-area: text;
   margin: 25px;
-  color: white;
-  text-shadow: 0px 0px 20px #000, 
-  0px 0px 20px #000, 0px 0px 20px #000, 
-  0px 0px 20px #000, 0px 0px 10px #000,
-  0px 0px 8px #000, 0px 0px 8px #000;
+  color: rgba(1,1,1,0);
 }
-.card-text-about{
-  grid-area: text;
-  margin: 25px;
-  color: white;
+.card:hover > .card-text-about > .collapsedtext{
+  display: block;
 }
 .card:hover{
-  transform: scale(1.4);
+  transform: scale(1.03);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  height: 400px;
 }
+.card:hover > .card-text{
+  animation: showtext 0.3s forwards;
+}
+@keyframes showtext {
+  from {
+    color: rgba(1,1,1,0);
+  }
+  to {
+    color: white;
+    text-shadow: 0px 0px 20px #000, 
+    0px 0px 20px #000, 0px 0px 20px #000, 
+    0px 0px 20px #000, 0px 0px 10px #000,
+    0px 0px 8px #000, 0px 0px 8px #000;
+  }
+}
+
 
 /* sub pages */
 .mytext{
