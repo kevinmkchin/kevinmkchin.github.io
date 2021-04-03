@@ -3,25 +3,24 @@
   src: url("fonts/Perfect DOS VGA 437.ttf");
 }
 
-*{
-  font-family: "VGA437";
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
 /*
 monokai
 lightpink:    #FF6188;
 lightyellow:  #FFD866;
 lightblue:    #76D8E4;
 */
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 main {
 
 }
 body {
-  background-color: #2D2A2E;
+    background-color: #2D2A2E;
 }
 body a{
     color: #FF6188;
@@ -37,6 +36,7 @@ body li {
 
 /* CARDS */
 .cards{
+  font-family: "VGA437";
   margin-left:auto;
   margin-right:auto;
   width: 560px;
@@ -75,7 +75,7 @@ body li {
 }
 .notcard
 {
-  height: 200px;
+  height: 300px;
   margin: 25px;
   text-align: center;
   font-size: 16px;
@@ -143,6 +143,7 @@ body li {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-family: "VGA437";
 }
 .goback:hover {
   background-color: #948B96;
