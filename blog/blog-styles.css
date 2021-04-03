@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "VGA437";
+  src: url("../fonts/Perfect DOS VGA 437.ttf");
+}
+
+@font-face {
+  font-family: "noe";
+  src: url("../fonts/noe-display-regular.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+main {
+
+}
+body {
+  font-size: 20px;
+  font-family: "noe";
+  color: #292929;
+  line-height: 1.6;
+  text-align: left;
+  width: 854px;
+  padding-top: 0px;
+  margin-left:auto;
+  margin-right:auto;
+}
+body a{
+  color: #76D8E4;
+}
+body a:hover{
+  color: #FFD866;
+}
+body p{
+  padding-bottom: 40px;
+}
+
+/* back button */
+.goback{
+  background-color: white;
+  color: black;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "VGA437";
+}
+.goback:hover {
+  background-color: #948B96;
+  color: grey;
+}
