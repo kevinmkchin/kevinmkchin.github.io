@@ -62,6 +62,18 @@ body li {
   transition: 0.3s ease;
   cursor: pointer;
 }
+.notcard
+{
+  height: 180px;
+  margin: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+#about {
+  display: none;
+  height: 1120px;
+}
 @media (max-width: 590px)
 {
   .cards
@@ -72,15 +84,21 @@ body li {
   {
     width: 400px;
   }
+  .notcard
+  {
+    height: 210px;
+  }
+  #me{
+    width: 300px;
+  }
+  #me2{
+    width: 300px;
+  }
+  #about{
+    height:1000px;
+  }
 }
-.notcard
-{
-  height: 300px;
-  margin: 25px;
-  text-align: center;
-  font-size: 16px;
-  color: white;
-}
+
 .card-text{
   grid-area: text;
   margin: 25px;

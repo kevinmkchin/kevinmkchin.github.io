@@ -13,23 +13,49 @@
 
 <div class="cards">
 
-<div class="notcard" id="about">
+<div class="notcard" id="intro">
 	<div class="card-text-about">
 		<img src="spaceghosticon.png" width="100">
-		<h2>About <a href="https://www.linkedin.com/in/kevinmkchin/" target="_blank">Kevin MK Chin</a></h2>
-		<br>
-		<span class="updated">university of british columbia | b.sc. computer science and software engineering | vancouver | he/him</span>
-		<br><br>
-
-		<b>
-		<ul>
+		<b><ul>
 		  <li><a href="https://github.com/kevinmkchin" target="_blank">GitHub</a></li>
 		  <li><a href="blog/blog.html">Blog</a></li>
 		  <li><a href="mailto:kevinmkchin@siggraph.org">Contact</a></li>
-		</ul>
-		</b>
+		  <script>
+			let b_about_shown = false;
+			function toggle_about()
+			{
+			  if(b_about_shown)
+			  {
+			    document.getElementById("about").style.display = "none";
+			    b_about_shown = false;
+			  }
+			  else
+			  {
+			    document.getElementById("about").style.display = "block";
+			    b_about_shown = true;
+			  }
+			}
+		  </script>
+		  <li><a onclick="toggle_about()" style="cursor: pointer;">Kevin</a></li>
+		</ul></b>
 		<br>
-		<p>I specialize in computer graphics (ACM SIGGRAPH) and game engine architecture. I'm currently at <a href="https://unity.com/" target="_blank">Unity</a>; previously at <a href="https://www.offworldindustries.com/about/" target="_blank">Offworld Industries</a>. This page is a collection of my games and projects. Click on the panels below to see more.</p>
+		<p>This page is a collection of my games and projects. Click on the panels below to see more.</p>
+	</div>
+</div>
+
+<div class="notcard" id="about">
+	<div class="card-text-about">
+		<img src="me.png" width=400 id="me"><br><br>
+		<h2><a href="https://www.linkedin.com/in/kevinmkchin/" target="_blank">Kevin MK Chin</a></h2>
+		<br>
+		<span>university of british columbia | b.sc. computer science and software engineering | vancouver | he/him</span>
+		<br><br>
+		<p>I specialize in computer graphics (ACM SIGGRAPH) and game engine architecture. I'm interested in low-level optimizations, systems, shaders, and tools. I'm currently at <a href="https://unity.com/" target="_blank">Unity</a>; previously at <a href="https://www.offworldindustries.com/about/" target="_blank">Offworld Industries</a>.
+		</p>
+		<br>
+		<p>I'm a firm believer in the tradition of programming games from scratch. Outside of programming, I enjoy music and collecting records.</p><br>
+		<img src="me2.jpg" width=400 id="me2"><br><br>
+		<p>Send me an email and say hi! If you're considering emailing me, then I probably want to hear from you, and I will almost certainly reply.</p>
 	</div>
 </div>
 
