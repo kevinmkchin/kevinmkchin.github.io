@@ -3,6 +3,11 @@
   src: url("fonts/Perfect DOS VGA 437.ttf");
 }
 
+@font-face {
+  font-family: "noe";
+  src: url("fonts/noe-display-regular.ttf");
+}
+
 /*
 monokai
 lightpink:    #FF6188;
@@ -13,7 +18,6 @@ lightblue:    #76D8E4;
 *{
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none;
 }
 main {
@@ -27,11 +31,6 @@ body a{
 }
 body a:hover{
     color: #FFD866;
-}
-body li {
-    display: inline;
-    font-size: 26px;
-    padding: 8px;
 }
 
 /* CARDS */
@@ -69,6 +68,12 @@ body li {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+#intro li{
+    list-style: none;
+    display: inline;
+    font-size: 26px;
+    padding: 8px;
 }
 #about {
   display: none;
@@ -137,11 +142,10 @@ body li {
   padding-top: 0px;
   margin-left:auto;
   margin-right:auto;
+  font-family: "noe";
 }
-.mytext ul li{
-  list-style-type: disc;
-}
-.mytext li{
+.mytext ul, li{
+  list-style: disc;
   font-size: 20px;
 }
 .mytext a{
