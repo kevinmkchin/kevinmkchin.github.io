@@ -8,6 +8,11 @@
   src: url("../fonts/noe-display-regular.ttf");
 }
 
+@font-face {
+  font-family: "charter";
+  src: url("../fonts/charter-bt-roman.ttf");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -19,7 +24,7 @@ main {
 }
 body {
   font-size: 20px;
-  font-family: "noe";
+  font-family: "charter";
   color: #292929;
   line-height: 1.6;
   text-align: left;
@@ -27,6 +32,9 @@ body {
   padding-top: 0px;
   margin-left:auto;
   margin-right:auto;
+}
+body h1 {
+  font-family: "noe";
 }
 body a{
   color: #76D8E4;

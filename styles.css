@@ -2,12 +2,18 @@
   font-family: "VGA437";
   src: url("fonts/Perfect DOS VGA 437.ttf");
 }
-
 @font-face {
   font-family: "noe";
   src: url("fonts/noe-display-regular.ttf");
 }
-
+@font-face {
+  font-family: "opensans";
+  src: url("fonts/OpenSansRegular.ttf");
+}
+@font-face {
+  font-family: "charterbt";
+  src: url("fonts/charter-bt-roman.ttf");
+}
 /*
 monokai
 lightpink:    #FF6188;
@@ -20,9 +26,6 @@ lightblue:    #76D8E4;
   padding: 0;
   text-decoration: none;
 }
-main {
-
-}
 body {
     background-color: #2D2A2E;
 }
@@ -32,10 +35,16 @@ body a{
 body a:hover{
     color: #FFD866;
 }
+body h1, h2, h3 {
+  font-weight: normal;
+}
+.soft_shadow{
+  box-shadow:0 0 14px 1px rgba(0,0,0,0.5)
+}
 
 /* CARDS */
 .cards{
-  font-family: "VGA437";
+  font-family: "opensans";
   margin-left:auto;
   margin-right:auto;
   width: 560px;
@@ -48,10 +57,10 @@ body a:hover{
   margin-top: 0px;
   margin-bottom: 0px;
 
-  font-size: 18px;
+  font-size: 15px;
 
   width: 560px;
-  height: 250px;
+  height: 315px;
 
   border-radius: 0px;
   background: #2D2A2E;
@@ -63,22 +72,13 @@ body a:hover{
 }
 .notcard
 {
-  height: 180px;
-  margin: 25px;
-  text-align: center;
-  font-size: 16px;
-  color: white;
+  height: 160px;
+  margin: 15px;
+  text-align: left;
+  font-size: 15px;
+  color: #E8E8E8;
 }
-#intro li{
-    list-style: none;
-    display: inline;
-    font-size: 26px;
-    padding: 8px;
-}
-#about {
-  display: none;
-  height: 1120px;
-}
+
 @media (max-width: 590px)
 {
   .cards
@@ -91,16 +91,7 @@ body a:hover{
   }
   .notcard
   {
-    height: 210px;
-  }
-  #me{
-    width: 300px;
-  }
-  #me2{
-    width: 300px;
-  }
-  #about{
-    height:1000px;
+    width: 400px;
   }
 }
 
@@ -115,7 +106,6 @@ body a:hover{
 .card:hover{
   transform: scale(1.03);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  height: 400px;
 }
 .card:hover > .card-text{
   animation: showtext 0.3s forwards;
@@ -133,27 +123,36 @@ body a:hover{
   }
 }
 
-
 /* sub pages */
 .mytext{
   text-align: left;
-  color: white;
-  width: 854px;
+  color: #E8E8E8;
+  width: 560px;
   padding-top: 0px;
   margin-left:auto;
   margin-right:auto;
-  font-family: "noe";
+  font-family: "opensans";
+}
+.mytext img{
+  width: 560px;
+}
+.mytext iframe {
+  width: 560px;
+  height: 315px;
 }
 .mytext ul, li{
   list-style: disc;
-  font-size: 20px;
+  font-size: 15px;
 }
 .mytext a{
   color: #FF6188;
   text-shadow: 2px 2px #000000;
 }
-.mytext p{
+.mytext h1, h2, h3{
   font-size: 20px;
+}
+.mytext p{
+  font-size: 15px;
 }
 
 /* back button */

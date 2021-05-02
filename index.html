@@ -5,76 +5,31 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <link rel="stylesheet" type="text/css" href="styles-cards.css"/>
-<title>space ghost</title>
-<link rel="icon" href="spaceghosticon.png">
+<title>kevin's page of witchcraft</title>
+<link rel="icon" href="">
 </head>
   
 <body>
 
 <div class="cards">
 
-<div class="notcard" id="intro">
-	<div class="card-text-about">
-		<img src="spaceghosticon.png" width="100">
-		<b><ul>
-		  <li><a href="https://github.com/kevinmkchin" target="_blank">GitHub</a></li>
-		  <li><a href="blog/blog.html">Blog</a></li>
-		  <li><a href="mailto:kevinmkchin@siggraph.org">Contact</a></li>
-		  <script>
-			let b_about_shown = false;
-			function toggle_about()
-			{
-			  if(b_about_shown)
-			  {
-			    document.getElementById("about").style.display = "none";
-			    b_about_shown = false;
-			  }
-			  else
-			  {
-			    document.getElementById("about").style.display = "block";
-			    b_about_shown = true;
-			  }
-			}
-		  </script>
-		  <li><a onclick="toggle_about()" style="cursor: pointer;">Kevin</a></li>
-		</ul></b>
-		<br>
-		<p>This page is a collection of my games and projects. Click on the panels below to see more.</p>
-	</div>
-</div>
-
-<div class="notcard" id="about">
-	<div class="card-text-about">
-		<img src="me.png" width=400 id="me"><br><br>
-		<h2><a href="https://www.linkedin.com/in/kevinmkchin/" target="_blank">Kevin MK Chin</a></h2>
-		<br>
-		<span>university of british columbia | b.sc. computer science and software engineering | vancouver | he/him</span>
-		<br><br>
-		<p>I specialize in computer graphics (ACM SIGGRAPH) and game engine architecture. I'm interested in low-level optimizations, systems, shaders, and tools. I'm currently at <a href="https://unity.com/" target="_blank">Unity</a>; previously at <a href="https://www.offworldindustries.com/about/" target="_blank">Offworld Industries</a>.
-		</p>
-		<br>
-		<p>I'm a firm believer in the tradition of programming games from scratch. Outside of programming, I enjoy music and collecting records.</p><br>
-		<img src="me2.jpg" width=400 id="me2"><br><br>
-		<p>Send me an email and say hi! If you're considering emailing me, then I probably want to hear from you, and I will almost certainly reply.</p>
-	</div>
+<div class="notcard">
+	<h3>kc.gd | <a href="https://github.com/kevinmkchin" target="_blank" style="cursor: pointer;">github</a></h3>
+	<p><img src="me.png" alt="avatar" style="float: right; margin: 1em; width: 128px; margin-top: 0em" class="soft_shadow"></p>
+	<p>My name is Kevin Chin; I specialize in computer graphics and game engine architecture. I'm interested in low-level optimizations, systems, shaders, and tools. I'm a software engineer at <a href="https://unity.com/" target="_blank">Unity</a> Technologies. Here’s some of my nonsense:</p>
 </div>
 
 <div class="card" id="adk" onclick="window.open('https://github.com/kevinmkchin/ADK')">
 	<div class="card-text">
 		<h2>ADK (Ayax Development Kit)</h2>
-		<p>Custom built C++ game engine providing tools for building modern 2D games.</p>
-		<span>Updated Feb 8, 2021</span>
-		<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
+		<p>ADK is an easy-to-use C++ game engine for building modern 2D games. Whether you take one of the example/demo games and expand upon it or decide to create a new game using the integrated editor, ADK provides the features you need. ADK includes a built-in editor that allows for seamless level creation, configuration of animations and game logic, and importing of sprites and resources. ADK uses a custom reflection metaprogramming library to expose gameobject fields to the editor.</p>
 	</div>
 </div>
-
 
 <div class="card" id="whiplash" onclick="window.open('https://store.steampowered.com/app/1450190/SUPER_WHIPLASH/')">
 	<div class="card-text">
 		<h2>SUPER WHIPLASH</h2>
 		<p>An online multiplayer vehicular combat game inspired by Twisted Metal.</p>
-		<span>Updated Nov 11, 2020</span>
-		<!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
 	</div>
 </div>
 
@@ -82,7 +37,6 @@
 	<div class="card-text">
 		<h2>Eternal Fortress OpenGL</h2>
 		<p>3D game made in OpenGL and Java inspired by 90's FPS games.</p>
-		<span>Updated June 27, 2020</span>
 	</div>
 </div>
 
@@ -90,7 +44,6 @@
 	<div class="card-text">
 		<h2>Raycasting Renderer</h2>
 		<p>Demonstration of a graphics rendering technique called Raycasting. Similar to John Carmack's raycasting in Wolfenstein 3D. </p>
-		<span>Updated Sept 24, 2019</span>
 	</div>
 </div>
 
@@ -98,15 +51,6 @@
 	<div class="card-text">
 		<h2>Dream of Flight</h2>
 		<p>2D platformer game made with my own custom C# game engine.</p>
-		<span>Updated Jan 4, 2020</span>
-	</div>
-</div>
-
-<div class="card" id="settlers" onclick="window.location='settlers.html';">
-	<div class="card-text">
-		<h2>Settlers of the Rapture</h2>
-		<p>Unfinished roguelike game that uses Perlin noise to procedurally generate the world. Inspired by Dwarf Fortress and Cataclysm: DDA.</p>
-		<span>Updated Mar 13, 2019</span>
 	</div>
 </div>
 
@@ -114,15 +58,6 @@
 	<div class="card-text">
 		<h2>Ajax 3D Engine</h2>
 		<p>OpenGL 3D graphics engine made in Java</p>
-		<span>Updated May 31, 2019</span>
-	</div>
-</div>
-
-<div class="card" id="first-hello" onclick="window.open('https://devpost.com/software/first-hello')">
-	<div class="card-text">
-		<h2>first hello</h2>
-		<p>NwHacks 2020 - won Google's Best Use of Google Cloud prize. A social networking app which uses facial recognition instead of a username or handle. Find out the names, interests, and pronouns of people you meet by simply scanning their face!</p>
-		<span>Updated Jan 13, 2020</span>
 	</div>
 </div>
 
@@ -131,15 +66,27 @@
 		
 		<h2>bambuu editor</h2>
 		<p>Tilemap Editor. Easily create tilemaps/levels for platformers, top-down shooters, etc.</p>
-		<span>Updated Jan 10, 2020</span>
 	</div>
 </div>
 
-<div class="card" id="voicebox" onclick="window.open('https://devpost.com/software/voicebox-gaming-with-your-voice')">
+<div class="card" id="first-hello" onclick="window.open('https://devpost.com/software/first-hello')">
+	<div class="card-text">
+		<h2>first hello</h2>
+		<p>NwHacks 2020 - won Google's Best Use of Google Cloud prize. A social networking app which uses facial recognition instead of a username or handle. Find out the names, interests, and pronouns of people you meet by simply scanning their face!</p>
+	</div>
+</div>
+
+<div class="card" id="settlers" onclick="window.location='settlers.html';">
+	<div class="card-text">
+		<h2>Settlers of the Rapture</h2>
+		<p>Unfinished roguelike game that uses Perlin noise to procedurally generate the world. Inspired by Dwarf Fortress and Cataclysm: DDA.</p>
+	</div>
+</div>
+
+<!-- <div class="card" id="voicebox" onclick="window.open('https://devpost.com/software/voicebox-gaming-with-your-voice')">
 	<div class="card-text">
 		<h2>VoiceBox (Gaming with your Voice)</h2>
 		<p>Endless runner game where you dodge obstacles using your voice. Built in Unity in 6 hours at Local Hack Day 2019.</p>
-		<span>Updated Nov 13, 2019</span>
 	</div>
 </div>
 
@@ -147,7 +94,6 @@
 	<div class="card-text">
 		<h2>Descension</h2>
 		<p>Top-down survival shooter. Made with Game Maker Language and Game Maker when I was 14.</p>
-		<span>Updated July 24, 2015</span>
 	</div>
 </div>
 
@@ -155,13 +101,8 @@
 	<div class="card-text">
 		<h2>Context</h2>
 		<p>NwHacks 2019. Smart note-taking web app that remembers your definitions for words, and automatically formats your notes.</p>
-		<span>Updated Jan 27, 2019</span>
 	</div>
-</div>
-
-<div class="notcard" id="end">
-	<p style="color: #FF6188;">© 2020-2021 Kevin Chin</p>
-</div>
+</div> -->
 
 </div>
 </body>

@@ -10,10 +10,22 @@
 <body>
 <button onclick="location.href='blog.html';" class="goback"><- Back</button><br><br><br>
 
-<h1>Article Title</h1>
+<h1>C++ Reflection: A Short, Practical Guide to Metaprogramming</h1>
 By <a href="https://www.linkedin.com/in/kevinmkchin/">Kevin Chin</a><br><br>
+
+<p>Reflection, as a subset of metaprogramming, is the ability for a program to inquire about its own structure and code. While some languages like Java and C# provide some limited reflection, most langauges (e.g., C++) have basically no built-in ability to "reflect". Thus, it is necessary to implement our own reflection system when using these languages.</p>
+
+<p>Here are some examples of use cases in order to motivate the implementation of a reflection system. Unreal (as well as many other game engines) use reflection to store information about the structure of game objects (although they also use reflection for many more wonderful features). For example, imagine we create a C++ class for a Car in Unreal. Let's say that this Car has a few properties: a floating point number representing the Car's maximum speed, an integer representing the number of gears the Car has, and a boolean for whether or not the Car is a Race Car. How does the Unreal Editor know about these properties? How does it expose these fields to the editor so that designers can modify these Car properties?</p>
+
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+https://www.gamasutra.com/view/news/128978/Reflection_in_C_The_simple_implementation_of_Splinter_Cell.php
+
+https://preshing.com/20180116/a-primitive-reflection-system-in-cpp-part-1/
+
+http://donw.io/post/reflection-cpp-1/
 
 </body>
 </html>
