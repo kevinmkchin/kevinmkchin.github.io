@@ -5,6 +5,12 @@
     background-size: 600px; 
 }
 
+#xngine {
+    background: url("thumbnails/1 - vokselia.png");
+    background-position: 60%;
+    background-size: cover;
+}
+
 #adk {
     background: url("thumbnails/adk-levelcreation.gif");
     background-position: 60%;
