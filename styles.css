@@ -14,12 +14,22 @@
   font-family: "charterbt";
   src: url("fonts/charter-bt-roman.ttf");
 }
-/*
-monokai
-lightpink:    #FF6188;
-lightyellow:  #FFD866;
-lightblue:    #76D8E4;
-*/
+
+/* Note (Kevin): Set global color, font, etc here: */
+:root {
+  --monokai-pink:         #FF6188;
+  --monokai-yellow:       #FFD866;
+  --monokai-blue:         #76D8E4;
+  --monokai-background:   #2D2A2E;
+  --hermit-background:    #494f5c; /*https://github.com/Track3/hermit*/
+
+  --default-background:   var(--hermit-background);
+  --default-font:         "opensans";
+  --default-font-size:    15px;
+  --default-font-colour:  #E8E8E8;
+  --link-default-colour:  var(--monokai-blue);
+  --link-hover-colour:    var(--monokai-yellow);
+}
 
 *{
   margin: 0;
@@ -27,13 +37,13 @@ lightblue:    #76D8E4;
   text-decoration: none;
 }
 body {
-    background-color: #2D2A2E;
+    background-color: var(--default-background);
 }
 body a{
-    color: #FF6188;
+    color: var(--link-default-colour);
 }
 body a:hover{
-    color: #FFD866;
+    color: var(--link-hover-colour);
 }
 body h1, h2, h3 {
   font-weight: normal;
@@ -43,8 +53,8 @@ body h1, h2, h3 {
 }
 
 /* CARDS */
-.cards{
-  font-family: "opensans";
+.cards {
+  font-family: var(--default-font);
   margin-left:auto;
   margin-right:auto;
   width: 560px;
@@ -52,15 +62,15 @@ body h1, h2, h3 {
 .card {
   float: left;
   display: grid;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 
   font-size: 15px;
 
   width: 560px;
-  height: 315px;
+  height: 150px;
 
   border-radius: 0px;
   background: #2D2A2E;
@@ -70,31 +80,20 @@ body h1, h2, h3 {
   transition: 0.3s ease;
   cursor: pointer;
 }
-.notcard
-{
-  height: 160px;
+.notcard {
   margin: 15px;
   text-align: left;
   font-size: 15px;
-  color: #E8E8E8;
+  color: var(--default-font-colour);
 }
 
-@media (max-width: 590px)
-{
-  .cards
-  {
-    width: 400px;
-  }
-  .card
-  {
-    width: 400px;
-  }
-  .notcard
-  {
+@media (max-width: 590px) {
+  .cards,.card,.notcard{
     width: 400px;
   }
 }
 
+/* Card text and hover animations */
 .card-text{
   grid-area: text;
   margin: 25px;
@@ -105,6 +104,7 @@ body h1, h2, h3 {
 }
 .card:hover{
   transform: scale(1.03);
+  height: 240px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 .card:hover > .card-text{
@@ -123,15 +123,15 @@ body h1, h2, h3 {
   }
 }
 
-/* sub pages */
+/* Sub Pages */
 .mytext{
   text-align: left;
-  color: #E8E8E8;
+  color: var(--default-font-colour);
   width: 560px;
   padding-top: 0px;
   margin-left:auto;
   margin-right:auto;
-  font-family: "opensans";
+  font-family: var(--default-font);
 }
 .mytext img{
   width: 560px;
@@ -142,17 +142,24 @@ body h1, h2, h3 {
 }
 .mytext ul, li{
   list-style: disc;
-  font-size: 15px;
+  font-size: var(--default-font-size);
 }
 .mytext a{
-  color: #FF6188;
-  text-shadow: 2px 2px #000000;
+  color: var(--link-default-colour);
+/*  text-shadow: 2px 2px #000000;*/
 }
-.mytext h1, h2, h3{
+.mytext h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.mytext h2 {
   font-size: 20px;
 }
+.mytext h3 {
+  font-size: 16px;
+}
 .mytext p{
-  font-size: 15px;
+  font-size: var(--default-font-size);
 }
 
 /* back button */
@@ -163,7 +170,7 @@ body h1, h2, h3 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "VGA437";
 }
 .goback:hover {

@@ -7,7 +7,6 @@
 
 #xngine {
     background: url("thumbnails/1 - vokselia.png");
-    background-position: 60%;
     background-size: cover;
 }
 
@@ -55,7 +54,7 @@
 
 #context {
     background: url("thumbnails/context.PNG");
-    background-position-y: 20%;
+    background-position-y: 30%;
     background-size: cover;
 }
 
