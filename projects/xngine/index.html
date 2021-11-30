@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="3D Graphics game engine written in C&#43;&#43; with OpenGL" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="3D Graphics game engine written in C&#43;&#43; with OpenGL" />
+<meta property="og:title" content="XNGINE - 3D Game Engine" />
+<meta property="og:site_name" content="kev" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://kevch.in/projects/xngine/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2021-10-20
+" /> <meta property="article:modified_time" content="2021-10-20
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kevinmkchin" />
+<meta name="twitter:creator" content="@kevinmkchin" />
+<meta
+  name="twitter:title"
+  content="XNGINE - 3D Game Engine | kev"
+/>
+<meta
+  name="twitter:description"
+  content="3D Graphics game engine written in C&#43;&#43; with OpenGL|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://kevch.in/projects/xngine/" />
+
+
+
+    <title>XNGINE - 3D Game Engine</title>
+    <link rel="canonical" href="https://kevch.in/projects/xngine/" />
+      
+      
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://kevch.in/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a
+    href="https://kevch.in/"
+    class="b bb bw1 pb1 no-underline black"
+    >kev</a
+  >
+  <span class="b"> / </span>
+  <a href="/projects" class="b bb bw1 pb1 no-underline black">projects</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">XNGINE - 3D Game Engine</h1>
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+      <h2 id="githubhttpsgithubcomkevinmkchinxngine"><a href="https://github.com/kevinmkchin/XNGINE">GitHub</a></h2>
+<p>3D graphics game engine written in C++ with OpenGL. <a href="http://glew.sourceforge.net/">GLEW</a> for OpenGL interface. <a href="https://www.libsdl.org/">SDL</a> for window creation and input. <a href="https://www.assimp.org/">Open Asset Importer</a> for importing 3D models.</p>
+<p><img src="https://user-images.githubusercontent.com/44921110/126013500-dd3069ee-5848-4e1d-9d52-fef2098c2e98.png" alt="1 - vokselia"></p>
+<h2 id="how-to-build-and-run">How to Build and Run</h2>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>Run build-win64-cmake.bat (requires CMake)</li>
+<li>Run run.bat (with argument &ldquo;vs&rdquo; if you want to launch Visual Studio to debug)</li>
+<li>Profit</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/44921110/126013673-d96317e8-23d6-481d-a5f9-8f9b228be4be.png" alt="2 - sponza">
+<img src="https://user-images.githubusercontent.com/44921110/126013678-28244454-2d34-4f92-b784-a8677adba201.png" alt="3 - alduin"></p>
+<h2 id="features">Features</h2>
+<h3 id="deferred-rendering">Deferred rendering</h3>
+<p><img src="https://user-images.githubusercontent.com/44921110/126013683-de21d0e8-1b60-497c-956d-b44492f6bbd2.png" alt="4 - features - deferred rendering"></p>
+<h3 id="tiled-light-culling">Tiled light culling</h3>
+<p>The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.
+<img src="https://user-images.githubusercontent.com/44921110/126013688-95efbc4b-d008-41ee-8c3e-3f0f5f070cb3.png" alt="5 - features - 4000 lights"></p>
+<h3 id="directional--omni-directional-shadow-mapping">Directional &amp; omni-directional shadow mapping</h3>
+<p><img src="https://user-images.githubusercontent.com/44921110/126013694-ca94e7f1-afa8-4aae-9a13-14130e60ce80.png" alt="6 - features - shadow mapping"></p>
+<h3 id="40-model-file-formats-support">40+ model file formats support</h3>
+<p><img src="https://user-images.githubusercontent.com/44921110/126013697-6ab89220-723b-482f-ad42-b812bac8eefe.png" alt="7 - doomguy"></p>
+<h3 id="debugging">Debugging</h3>
+<p>In-game console for developer commands and debugging.
+<img src="https://github.com/kevinmkchin/TrueTypeAssembler/blob/main/misc/console.gif?raw=true" alt="console"></p>
+<p>Debug drawer for point lights and spot lights. Frametime and FPS profiler.
+<img src="https://user-images.githubusercontent.com/44921110/126014963-42449bb3-927d-4c33-a3e4-b9337e83bcef.png" alt="debug drawer"></p>
+<h2 id="additional-screenshots">Additional Screenshots</h2>
+<p><img src="https://user-images.githubusercontent.com/44921110/126014655-f0277696-a468-4054-abf9-23307c682c69.png" alt="8 - 1000 lights lost empire">
+<img src="https://user-images.githubusercontent.com/44921110/126014662-e9eec1c4-03e5-4318-b6a8-4e82be243621.png" alt="9 - vokselia">
+<img src="https://user-images.githubusercontent.com/44921110/126014674-797d737a-1540-4983-90a5-7f0e15a4bf15.png" alt="11 - tracks">
+<img src="https://i.imgur.com/rghBOau.jpg" alt="sponza atrium no shadows"></p>
+
+    </article>
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2021 Copyright Kevin Chin (<a href='https://twitter.com/kevinmkchin'>@kevinmkchin</a>). All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

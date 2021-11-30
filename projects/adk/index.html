@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="C&#43;&#43; game engine for building modern 2D games" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="C&#43;&#43; game engine for building modern 2D games" />
+<meta property="og:title" content="ADK (Ayax Development Kit)" />
+<meta property="og:site_name" content="kev" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://kevch.in/projects/adk/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2021-02-21
+" /> <meta property="article:modified_time" content="2021-02-21
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kevinmkchin" />
+<meta name="twitter:creator" content="@kevinmkchin" />
+<meta
+  name="twitter:title"
+  content="ADK (Ayax Development Kit) | kev"
+/>
+<meta
+  name="twitter:description"
+  content="C&#43;&#43; game engine for building modern 2D games|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://kevch.in/projects/adk/" />
+
+
+
+    <title>ADK (Ayax Development Kit)</title>
+    <link rel="canonical" href="https://kevch.in/projects/adk/" />
+      
+      
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://kevch.in/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a
+    href="https://kevch.in/"
+    class="b bb bw1 pb1 no-underline black"
+    >kev</a
+  >
+  <span class="b"> / </span>
+  <a href="/projects" class="b bb bw1 pb1 no-underline black">projects</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">ADK (Ayax Development Kit)</h1>
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+      <h2 id="githubhttpsgithubcomkevinmkchinadk"><a href="https://github.com/kevinmkchin/ADK">GitHub</a></h2>
+<p><img src="https://github.com/kevinmkchin/kevinmkchin.github.io/blob/master/thumbnails/adk-levelcreation.gif?raw=true" alt=""></p>
+<h3 id="hey-good-luck-on-your-engine---noel-berryhttpstwittercomnoelfb-aug-14-2020-at-a-bouldering-gym">&ldquo;Hey, good luck on your engine.&rdquo; - <a href="https://twitter.com/NoelFB">Noel Berry</a> Aug 14, 2020 at a bouldering gym</h3>
+<h2 id="purpose">Purpose</h2>
+<p>Ayax Development Kit is a collection of tools and resources that one would want in order to create a 2D video game. In essence, ADK is an easy-to-use C++ game engine for building modern 2D games, but it includes several useful game systems such as character controllers, cameras, and common game objects such as trigger boxes. ADK also includes a demo platformer game to study. Whether you take one of the example/demo games and expand upon it or decide to create a new game using the integrated editor, ADK provides the features you need.</p>
+<p><img src="https://i.imgur.com/HRosCqM.png" alt=""></p>
+<p>I started this little project because I wanted two things: I wanted my own custom C++ game engine to make games with and I wanted a monolithic repository where I can collect all of my little games and game-related programming projects. Instead of having a ton of small projects and repositories, I wanted to compile them all into a single project. Not only do these projects offer references to learn from when creating my next game, having them included with ADK allows me to share code between the projects. The idea is to create systems and game features that are reusable across projects, so that, for example, if I program an A* pathfinding system in one game I will have it available to use in another game.</p>
+<p><img src="https://media3.giphy.com/media/P8blTBGB0RCX5EJLO3/giphy.gif" alt=""></p>
+<p>If I was going to create my own custom C++ game engine, I needed it to be better than the other engines available. The goal was to make an engine that was more flexible than Unreal engine and better than Game Maker.</p>
+<h2 id="features-overview-trailer">Features Overview Trailer</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/-d6XYUhZG78" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Prefabs</strong>
+<ul>
+<li>Prefab system allows you to create, configure, and store an object complete with all its property values, animations, and collisions as a reusable Asset. The Prefab Asset acts as a template from which you can create new Prefab instances in the Scene.</li>
+</ul>
+</li>
+<li><strong>Sophisticated Integrated Editor</strong>
+<ul>
+<li>Save and Load Levels</li>
+<li>Integrated editor allows for working very close to the final product compared to using an external editor</li>
+<li>Directly placing entities (which is possible because the editor is integrated) means levels aren&rsquo;t confined to a grid</li>
+<li>Configure sprites, collisions, and animations all within the editor</li>
+</ul>
+</li>
+<li><strong>Code Reflection / Metaprogramming</strong>
+<ul>
+<li>Expose class fields to the editor. This is very useful in level creation; for example you can change the speed of certain enemies from within the editor. This means different instances of the same enemy class can have varying speeds. Reflection is very powerful.</li>
+</ul>
+</li>
+<li><strong>Animation System</strong>
+<ul>
+<li>Easy to configure multiple animations from a single spritesheet</li>
+</ul>
+</li>
+<li><strong>Collisions</strong>
+<ul>
+<li>Included code examples demonstrate how to easily implement pixel-perfect collision using the provided collision system</li>
+</ul>
+</li>
+<li><strong>Timers</strong>
+<ul>
+<li>Timers allow you to set a timer for a callback function/delegate. For example, when the player dies, you could set a 2 second timer for a function that restarts the level. Very useful.</li>
+</ul>
+</li>
+<li><strong>Entity and Scene System</strong>
+<ul>
+<li>What do you expect? It&rsquo;s a game engine</li>
+</ul>
+</li>
+<li><strong>Entity Layers</strong>
+<ul>
+<li>Entities can have variable depth, allowing for parallax effects and other cool tricks</li>
+</ul>
+</li>
+<li><strong>Reference Counted Resource Management</strong>
+<ul>
+<li>Automatic reference counting ensures resources are acquired when needed and freed when they are not</li>
+</ul>
+</li>
+<li><strong>Tags</strong>
+<ul>
+<li>Tags help you identify game objects during runtime. Without knowing the type of the object, we can simply check the object&rsquo;s tags and know whether or not that object can or cannot do certain things or has or doesn&rsquo;t have certain properties. A Tag is a reference word which you can assign to one or more game objects.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/Fl24SvW.png" alt=""></p>
+
+    </article>
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2021 Copyright Kevin Chin (<a href='https://twitter.com/kevinmkchin'>@kevinmkchin</a>). All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

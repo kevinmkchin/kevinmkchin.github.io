@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kev</title>
+    <link>https://kevch.in/</link>
+    <description>Recent content on kev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
+    <lastBuildDate>Tue, 30 Nov 2021 10:45:12 -0800</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>John Carmack UMKC Commencement Speech</title>
+      <link>https://kevch.in/blog/2021-11-30/</link>
+      <pubDate>Tue, 30 Nov 2021 10:45:12 -0800</pubDate>
+      
+      <guid>https://kevch.in/blog/2021-11-30/</guid>
+      <description>&amp;ldquo;There are lots of viable paths through engineering. The path I advocate for is &amp;lsquo;knowledge in depth&amp;rsquo; - for knowing things really deeply. It&amp;rsquo;s true that the modern wizardry of building amazing applications by bashing together a bunch of JavaScript libraries and web services has indeed minted a lot of startup millionaires, but it does remind me of Mickey Mouse as the sorcerer&amp;rsquo;s apprentice in Fantasia animating broomsticks with magic he doesn&amp;rsquo;t really understand and eventually making a really big mess.</description>
+    </item>
+    
+    <item>
+      <title>About Kevin Chin</title>
+      <link>https://kevch.in/about/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:23 -0800</pubDate>
+      
+      <guid>https://kevch.in/about/</guid>
+      <description>Current Incoming software engineer intern at Unity
+  Previously Worked on an unannounced multiplayer FPS game at Offworld Industries   Contact  GitHub - @kevinmkchin
+ Twitter - @kevinmkchin
+ LinkedIn - @kevinmkchin</description>
+    </item>
+    
+    <item>
+      <title>XNGINE - 3D Game Engine</title>
+      <link>https://kevch.in/projects/xngine/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/xngine/</guid>
+      <description>GitHub 3D graphics game engine written in C++ with OpenGL. GLEW for OpenGL interface. SDL for window creation and input. Open Asset Importer for importing 3D models.
+How to Build and Run Windows  Run build-win64-cmake.bat (requires CMake) Run run.bat (with argument &amp;ldquo;vs&amp;rdquo; if you want to launch Visual Studio to debug) Profit  Features Deferred rendering Tiled light culling The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.</description>
+    </item>
+    
+    <item>
+      <title>ADK (Ayax Development Kit)</title>
+      <link>https://kevch.in/projects/adk/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/adk/</guid>
+      <description>GitHub &amp;ldquo;Hey, good luck on your engine.&amp;rdquo; - Noel Berry Aug 14, 2020 at a bouldering gym Purpose Ayax Development Kit is a collection of tools and resources that one would want in order to create a 2D video game. In essence, ADK is an easy-to-use C++ game engine for building modern 2D games, but it includes several useful game systems such as character controllers, cameras, and common game objects such as trigger boxes.</description>
+    </item>
+    
+    <item>
+      <title>Super Whiplash - Online Multiplayer Game</title>
+      <link>https://kevch.in/projects/superwhiplash/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/superwhiplash/</guid>
+      <description>Steam Store Page I created an online multiplayer vehicular combat game inspired by Twisted Metal called Super Whiplash. This was a significant challenge because the built-in UE4 vehicle controller doesn&amp;rsquo;t work very well in multiplayer. I implemented an entirely new vehicle physics system with framerate independent physics. I networked vehicle physics (e.g. force, traction, etc.) in a way that would work with my system. The result is a bit janky but still more reliable than the built-in UE4 vehicle controller.</description>
+    </item>
+    
+    <item>
+      <title>Project Machina</title>
+      <link>https://kevch.in/projects/project-machina/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/project-machina/</guid>
+      <description>3D game made in Java with OpenGL inspired by 90&amp;rsquo;s FPS games like Doom and Hexen.
+[W][A][S][D] to move, [SPACE] to jump, [LMB] to shoot.
+Download Project Machina 0.1  Features currently implemented in the source code:  Collision through Pixel-perfect Axis-Aligned Bounding Box Chunk-loading (loading revelant chunks of a level instead of the entire level) Random level generation Save and Load level files Scenes and Entities GUI      History This game is built off of a heavily modified version of my game engine that I wrote in 2019: Ajax Engine</description>
+    </item>
+    
+    <item>
+      <title>Dream of Flight - Platformer Game</title>
+      <link>https://kevch.in/projects/dream-of-flight/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/dream-of-flight/</guid>
+      <description>A 2D platformer game inspired by EXOK&amp;rsquo;s Celeste. Built with C# on the MonoGame Framework.
+[A] to move left, [D] to move right, [J] to jump, [K] to toggle flying.
+Levels for this game are made using an old level editor I made: Bambuu TileMap Editor
+Source Code GitHub Repo
+Download Release 1.0  Gameplay Video   Screenshots   </description>
+    </item>
+    
+    <item>
+      <title>first hello</title>
+      <link>https://kevch.in/projects/first-hello/</link>
+      <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/first-hello/</guid>
+      <description>redirecting... </description>
+    </item>
+    
+    <item>
+      <title>Raycasting Renderer</title>
+      <link>https://kevch.in/projects/raycasting/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/raycasting/</guid>
+      <description>GitHub This is a demonstration of a video game graphics rendering technique known as Raycasting (find out more about raycasting here: Raycasting Explained). Inspired by John Carmack&amp;rsquo;s implementation of raycasting in Wolfenstein 3D.
+The tile map editor that I made to create levels for this the demo became a standalone tile map/level editor which I used for other projects: Bambuu TileMap Editor.
+[W][A][S][D] to move.
+Download Demo Download Demo gifs   </description>
+    </item>
+    
+    <item>
+      <title>Bambuu Level Editor</title>
+      <link>https://kevch.in/projects/bambuu/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/bambuu/</guid>
+      <description>TileMap/Level creator for video games.
+Download Release 1.0.0 Features  Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later). Fill screen tool. Variable TileMap dimensions.</description>
+    </item>
+    
+    <item>
+      <title>Settlers of the Rapture</title>
+      <link>https://kevch.in/projects/settlers/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/settlers/</guid>
+      <description>Roguelike project that uses Perlin noise to procedurally generate the world.
+I gained experience working with the concept of tiles in both 2 and 3 dimensions. This was very beneficial to me in my future projects such as the Bambuu Tilemap Editor, the Raycasting Demonstration, and the Arx Aeternus OpenGL game, all of which use some variation of tilemaps.
+Download Demo Download Demo Gif  Screenshots   </description>
+    </item>
+    
+    <item>
+      <title>Ajax 3D Engine</title>
+      <link>https://kevch.in/projects/ajax3d/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/ajax3d/</guid>
+      <description>redirecting... </description>
+    </item>
+    
+  </channel>
+</rss>

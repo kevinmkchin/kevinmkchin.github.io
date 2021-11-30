@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="Demonstration of a graphics rendering technique called Raycasting. Similar to John Carmack&#39;s raycasting in Wolfenstein 3D." />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Demonstration of a graphics rendering technique called Raycasting. Similar to John Carmack&#39;s raycasting in Wolfenstein 3D." />
+<meta property="og:title" content="Raycasting Renderer" />
+<meta property="og:site_name" content="kev" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://kevch.in/projects/raycasting/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2019-09-06
+" /> <meta property="article:modified_time" content="2019-09-06
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kevinmkchin" />
+<meta name="twitter:creator" content="@kevinmkchin" />
+<meta
+  name="twitter:title"
+  content="Raycasting Renderer | kev"
+/>
+<meta
+  name="twitter:description"
+  content="Demonstration of a graphics rendering technique called Raycasting. Similar to John Carmack&#39;s raycasting in Wolfenstein 3D.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://kevch.in/projects/raycasting/" />
+
+
+
+    <title>Raycasting Renderer</title>
+    <link rel="canonical" href="https://kevch.in/projects/raycasting/" />
+      
+      
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://kevch.in/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-60-ns center center-ns mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a
+    href="https://kevch.in/"
+    class="b bb bw1 pb1 no-underline black"
+    >kev</a
+  >
+  <span class="b"> / </span>
+  <a href="/projects" class="b bb bw1 pb1 no-underline black">projects</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Raycasting Renderer</h1>
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+      <h2 id="githubhttpsgithubcomkevinmkchinrayjax-engine"><a href="https://github.com/kevinmkchin/rayjax-engine">GitHub</a></h2>
+<p>This is a demonstration of a video game graphics rendering technique known as Raycasting (find out more about raycasting here: <a href="https://www.youtube.com/watch?v=eOCQfxRQ2pY">Raycasting Explained</a>). Inspired by John Carmack&rsquo;s implementation of raycasting in Wolfenstein 3D.</p>
+<p>The tile map editor that I made to create levels for this the demo became a standalone tile map/level editor which I used for other projects: <a href="https://github.com/kevinmkchin/bambuu">Bambuu TileMap Editor</a>.</p>
+<p>[W][A][S][D] to move.</p>
+<h3 id="download">Download</h3>
+<a href="raycasting/raycast%20demo.zip">Demo Download</a>
+<h3 id="demo-gifs">Demo gifs</h3>
+<p><figure><img src="/raycasting/rayjax-alt.gif"/>
+</figure>
+
+<figure><img src="/raycasting/rayjax.gif"/>
+</figure>
+</p>
+
+    </article>
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2021 Copyright Kevin Chin (<a href='https://twitter.com/kevinmkchin'>@kevinmkchin</a>). All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>
