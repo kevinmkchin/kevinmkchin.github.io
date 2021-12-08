@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="How to add a Developer Console to your C&#43;&#43; Game" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="How to add a Developer Console to your C&#43;&#43; Game" />
+<meta property="og:title" content="Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code" />
+<meta property="og:site_name" content="kev" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://kevch.in/blog/how-to-add-console-to-game/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2021-12-08
+" /> <meta property="article:modified_time" content="2021-12-08
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kevinmkchin" />
+<meta name="twitter:creator" content="@kevinmkchin" />
+<meta
+  name="twitter:title"
+  content="Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code | kev"
+/>
+<meta
+  name="twitter:description"
+  content="How to add a Developer Console to your C&#43;&#43; Game|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://kevch.in/blog/how-to-add-console-to-game/" />
+
+
+
+    <title>Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</title>
+    <link rel="canonical" href="https://kevch.in/blog/how-to-add-console-to-game/" />
+      
+      
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://kevch.in/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="https://kevch.in/" class="b bb bw1 pb1 no-underline black">kev</a>
+  <span class="b"> / </span>
+  <a href="/blog" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</h1>
+    <span class="f6 gray">December 8, 2021</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        <p>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. The following is an in-game console present in every <a href="https://en.wikipedia.org/wiki/Source_(game_engine)">Source</a> game:</p>
+<p><img src="https://developer.valvesoftware.com/w/images/c/c8/Console.gif" alt=""></p>
+<p>In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.</p>
+<p>These consoles have two components: the command-line interface and the console backend. The interface allows the user to type in commands as input. The backend receives the input and executes commands. In the future, I will make additional guides on how to create these console interfaces and backends from scratch, but for now we will focus on just getting a developer console up and running.</p>
+<p>For the backend, we are going use a single-header C++ library that I wrote called <code>noclip.h</code> <a href="https://github.com/kevinmkchin/noclip">(https://github.com/kevinmkchin/noclip)</a>. The name noclip comes from the (almost) universal console command: <a href="https://en.wikipedia.org/wiki/Noclip_mode">noclip</a>. This library is very light-weight and implements an entire developer console backend in very few lines of code. It also has an extremely simple API. If you want, feel free to pick through the header file and learn how the backend is actually implemented - it&rsquo;s not very long.</p>
+<p>For the interface, we are going to use the built-in terminal of the operating system we are on. On Windows, this would be the Windows Command Prompt. On Mac, this would be the Terminal. By using the built-in terminals, we can skip creating our own console interface in the game (e.g. a <a href="https://youtu.be/pZEhqwjreO4?t=35">drop-down console</a>). It also demonstrates the flexibility of <code>noclip.h</code> - it pretty much works with any sort of interface that has an input and output.</p>
+<p>Your game may already have an accompanying console/terminal window. If so, great! If not, we can use compiler options to get our executable to provide an accompanying terminal. You can do this on Windows Mac or Linux. If your Windows app does not already have an accompanying console, you simply <a href="../switch-windows-app-to-console-app/">switch the type of your app from Windows app to Console app</a>.</p>
+<p>Let&rsquo;s get started. Take the following program as an example.</p>
+<p><img src="/images/blog/console-1.png" alt=""></p>
+<p>We want to use the terminal window accompanying our GUI game window as our console interface.
+We create the console backend simply by declaring one.</p>
+<pre tabindex="0"><code>#include &quot;noclip.h&quot;
+noclip::console console;
+</code></pre><p>To call <code>console.execute</code>, we need an input stream and an output stream. Since we are using the terminal, we can use <code>std::cin</code> and <code>std::cout</code>, just like when we first learned how to print &lsquo;Hello World!&rsquo; in C++.</p>
+<pre tabindex="0"><code>int main()
+{
+    // Initialize game window, OpenGL, etc.
+
+    while(GameIsRunning) //game loop
+    {
+        console.execute(std::cin, std::cout);
+
+        // Update, Render, etc.
+    }
+
+    // Clean up
+
+    return 0; // Exit
+}
+</code></pre><p>However, you will notice that the above code doesn&rsquo;t work. The reason is because <code>std::cin</code> halts execution of the program until it reads an input from the terminal. Therefore, we enter the game loop but won&rsquo;t get past the <code>console.execute(std::cin, std::cout)</code> line until we type an input into the terminal. This is a problem for us because we want to poll the terminal for inputs alongside the game loop. In other words, we want the game loop to continue (i.e. update and render the game) while also checking the terminal for input.</p>
+<p>A solution to our problem is multithreading. We can use a secondary thread to check <code>std::cin</code> for input while the game loop continues to run on the main thread.</p>
+<p>We create two functions. PollConsoleInput() will be the function that executes on our secondary thread, and CheckConsoleCommandQueue() will run on the main thread in our game loop.</p>
+<pre tabindex="0"><code>std::string consoleCommandQueue;
+
+void PollConsoleInput()
+{
+    while(GameIsRunning)
+    {
+        std::string input;
+        std::cin &gt;&gt; input;
+        consoleCommandQueue = consoleCommandQueue + &quot; &quot; + input;
+    }
+}
+
+void CheckConsoleCommandQueue()
+{
+    if(!consoleCommandQueue.empty())
+    {
+        console.execute(consoleCommandQueue, std::cout);
+        consoleCommandQueue = std::string(); // empty the queue after execution
+    }
+}
+</code></pre><p>Notice how we are storing the input from <code>std::cin</code> into a string variable <code>consoleCommandQueue</code> shared between the two threads. This allows us to receive the input from our secondary thread and execute the input on the main thread. It is not thread-safe to call <code>console.execute</code> directly from the PollConsoleInput() function. <code>console.execute</code> modifies our game variables and invokes game logic - if this occurs on a second thread as well as the main thread, we could have race conditions and unexpected behaviour.</p>
+<pre tabindex="0"><code>int main()
+{
+    // Initialize game window, OpenGL, etc.
+
+    std::thread inputCheckingThread(PollConsoleInput); // Starts the second thread
+
+    while(GameIsRunning) //game loop
+    {
+        CheckConsoleCommandQueue(); // If there was input, execute commands
+
+        // Update, Render, etc.
+    }
+
+    // Clean up
+
+    inputCheckingThread.detach();
+
+    return 0; // Exit
+}
+</code></pre><p>Before exiting the program, we must ensure that we <code>detach</code> the thread polling <code>std::cin</code>. This allows us to exit our main thread execution without joining or terminating the second thread.</p>
+<p>That&rsquo;s it! We&rsquo;ve successfully added a developer console to our game/program. You can go ahead and type in commands into the terminal interface while the game runs. It&rsquo;s a little boring right now because we haven&rsquo;t added any custom console variables or commands. We can easily ameliorate that:</p>
+<pre tabindex="0"><code>std::string bgColor = &quot;blue&quot;;
+
+void Initialize()
+{
+    console.bind_cvar(&quot;color&quot;, &amp;bgColor);
+}
+
+void Render()
+{
+    // Draw background color based on bgColor
+}
+</code></pre><p>Now, as long as Initialize() is called and Render() is properly implemented, we can set <code>bgColor</code> from the console like so:</p>
+<p><img src="/images/blog/console-color-test.gif" alt=""></p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: December 8, 2021. Published at: 2021-12-08.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2021 Copyright Kevin Chin (<a href='https://twitter.com/kevinmkchin'>@kevinmkchin</a>). All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

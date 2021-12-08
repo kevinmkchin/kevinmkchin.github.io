@@ -7,13 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
-    <lastBuildDate>Tue, 30 Nov 2021 10:45:12 -0800</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 12:01:11 -0800</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</title>
+      <link>https://kevch.in/blog/how-to-add-console-to-game/</link>
+      <pubDate>Wed, 08 Dec 2021 12:01:11 -0800</pubDate>
+      
+      <guid>https://kevch.in/blog/how-to-add-console-to-game/</guid>
+      <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. The following is an in-game console present in every Source game:
+In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.</description>
+    </item>
+    
+    <item>
+      <title>How to switch Windows App to Console App</title>
+      <link>https://kevch.in/blog/switch-windows-app-to-console-app/</link>
+      <pubDate>Wed, 08 Dec 2021 10:47:57 -0800</pubDate>
+      
+      <guid>https://kevch.in/blog/switch-windows-app-to-console-app/</guid>
+      <description>When making a C++ executable on Windows, you have the option of choosing between a Windows app and a Console app. A Windows app is an app with a GUI Window, and a Console app runs in the terminal (e.g. Windows Command Prompt). By switching over a Windows App to a Console App, you will get a command prompt window accompanying your GUI program Window.
+Linker Option Visual Studio or MSVC C++ Compiler Set the /SUBSYSTEM linker option of the MSVC compiler for your project to CONSOLE.</description>
+    </item>
+    
     <item>
       <title>John Carmack UMKC Commencement Speech</title>
-      <link>https://kevch.in/blog/2021-11-30/</link>
+      <link>https://kevch.in/blog/john-carmack-speech/</link>
       <pubDate>Tue, 30 Nov 2021 10:45:12 -0800</pubDate>
       
-      <guid>https://kevch.in/blog/2021-11-30/</guid>
+      <guid>https://kevch.in/blog/john-carmack-speech/</guid>
       <description>&amp;ldquo;There are lots of viable paths through engineering. The path I advocate for is &amp;lsquo;knowledge in depth&amp;rsquo; - for knowing things really deeply. It&amp;rsquo;s true that the modern wizardry of building amazing applications by bashing together a bunch of JavaScript libraries and web services has indeed minted a lot of startup millionaires, but it does remind me of Mickey Mouse as the sorcerer&amp;rsquo;s apprentice in Fantasia animating broomsticks with magic he doesn&amp;rsquo;t really understand and eventually making a really big mess.</description>
     </item>
     
