@@ -9,12 +9,12 @@
     <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
     <lastBuildDate>Wed, 08 Dec 2021 12:01:11 -0800</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</title>
+      <title>Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code</title>
       <link>https://kevch.in/blog/how-to-add-console-to-game/</link>
       <pubDate>Wed, 08 Dec 2021 12:01:11 -0800</pubDate>
       
       <guid>https://kevch.in/blog/how-to-add-console-to-game/</guid>
-      <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.
+      <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 20 lines of code.
 The following is an in-game console present in every Source game:</description>
     </item>
     

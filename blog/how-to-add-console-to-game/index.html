@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content="How to add a Developer Console to your C&#43;&#43; Game" />
-<meta property="og:title" content="Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code" />
+<meta property="og:title" content="Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code" />
 <meta property="og:site_name" content="kev" />
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -40,7 +40,7 @@
 <meta name="twitter:creator" content="@kevinmkchin" />
 <meta
   name="twitter:title"
-  content="Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code | kev"
+  content="Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code | kev"
 />
 <meta
   name="twitter:description"
@@ -51,7 +51,7 @@
 
 
 
-    <title>Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</title>
+    <title>Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code</title>
     <link rel="canonical" href="https://kevch.in/blog/how-to-add-console-to-game/" />
       
       
@@ -110,11 +110,11 @@ if (!doNotTrack) {
   <a href="/blog" class="b bb bw1 pb1 no-underline black">blog</a>
 
   <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">Add a Developer Console to your C&#43;&#43; Game in 22 Lines of Code</h1>
+    <h1 itemprop="name" id="title">Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code</h1>
     <span class="f6 gray">December 8, 2021</span>
 
       <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        <p>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.</p>
+        <p>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 20 lines of code.</p>
 <p><img src="/images/blog/console-color-test.gif" alt=""></p>
 <p>The following is an in-game console present in every <a href="https://en.wikipedia.org/wiki/Source_(game_engine)">Source</a> game:</p>
 <p><img src="https://developer.valvesoftware.com/w/images/c/c8/Console.gif" alt=""></p>
@@ -147,7 +147,8 @@ noclip::console console;
 </code></pre><p>However, you will notice that the above code doesn&rsquo;t work. The reason is because <code>std::cin</code> halts execution of the program until it reads an input from the terminal. Therefore, we enter the game loop but won&rsquo;t get past the <code>console.execute(std::cin, std::cout)</code> line until we type an input into the terminal. This is a problem for us because we want to poll the terminal for inputs alongside the game loop. In other words, we want the game loop to continue (i.e. update and render the game) while also checking the terminal for input.</p>
 <p>A solution to our problem is multithreading. We can use a secondary thread to check <code>std::cin</code> for input while the game loop continues to run on the main thread.</p>
 <p>We create two functions. PollConsoleInput() will be the function that executes on our secondary thread, and CheckConsoleCommandQueue() will run on the main thread in our game loop.</p>
-<pre tabindex="0"><code>std::string consoleCommandQueue;
+<pre tabindex="0"><code>std::mutex consoleCommandQueueMutex;
+std::string consoleCommandQueue;
 
 void PollConsoleInput()
 {
@@ -155,12 +156,20 @@ void PollConsoleInput()
     {
         std::string input;
         std::cin &gt;&gt; input;
+
+        std::lock_guard&lt;std::mutex&gt; lock(consoleCommandQueueMutex); // lock mutex before writing to command queue
         consoleCommandQueue = consoleCommandQueue + &quot; &quot; + input;
     }
 }
 
 void CheckConsoleCommandQueue()
 {
+    std::unique_lock&lt;std::mutex&gt; lock(consoleCommandQueueMutex, std::defer_lock);
+    if(!lock.try_lock())
+    {
+        return;
+    }
+
     if(!consoleCommandQueue.empty())
     {
         console.execute(consoleCommandQueue, std::cout);
@@ -168,6 +177,7 @@ void CheckConsoleCommandQueue()
     }
 }
 </code></pre><p>Notice how we are storing the input from <code>std::cin</code> into a string variable <code>consoleCommandQueue</code> shared between the two threads. This allows us to receive the input from our secondary thread and execute the input on the main thread. It is not thread-safe to call <code>console.execute</code> directly from the PollConsoleInput() function. <code>console.execute</code> modifies our game variables and invokes game logic - if this occurs on a second thread as well as the main thread, we could have race conditions and unexpected behaviour.</p>
+<p>To avoid race conditions as we read and write to <code>consoleCommandQueue</code>, we use mutex locks. We have added mutex locks before we write to the command queue string in the second thread and before we read and execute the commands in the main thread.</p>
 <pre tabindex="0"><code>int main()
 {
     // Initialize game window, OpenGL, etc.
