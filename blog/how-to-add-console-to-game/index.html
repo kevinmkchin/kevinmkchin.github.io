@@ -164,12 +164,7 @@ void PollConsoleInput()
 
 void CheckConsoleCommandQueue()
 {
-    std::unique_lock&lt;std::mutex&gt; lock(consoleCommandQueueMutex, std::defer_lock);
-    if(!lock.try_lock())
-    {
-        return;
-    }
-
+    std::lock_guard&lt;std::mutex&gt; lock(consoleCommandQueueMutex); // lock mutex before reading the command queue
     if(!consoleCommandQueue.empty())
     {
         console.execute(consoleCommandQueue, std::cout);
