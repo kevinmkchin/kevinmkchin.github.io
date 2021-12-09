@@ -14,8 +14,8 @@
       <pubDate>Wed, 08 Dec 2021 12:01:11 -0800</pubDate>
       
       <guid>https://kevch.in/blog/how-to-add-console-to-game/</guid>
-      <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. The following is an in-game console present in every Source game:
-In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.</description>
+      <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 22 lines of code.
+The following is an in-game console present in every Source game:</description>
     </item>
     
     <item>
