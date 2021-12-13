@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
-    <lastBuildDate>Wed, 08 Dec 2021 12:01:11 -0800</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 11:36:22 +0000</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some things I&#39;ve learned about 3D Math and Common sources of confusion</title>
+      <link>https://kevch.in/blog/3d-math/</link>
+      <pubDate>Sun, 12 Dec 2021 11:36:22 +0000</pubDate>
+      
+      <guid>https://kevch.in/blog/3d-math/</guid>
+      <description>I am by no means an expert in math, but having worked with linear algebra and math in 3D spaces for years now, I think it could be valuable to share some things that I&amp;rsquo;ve learned and some common sources of confusion when it comes to working in 3D spaces. At the very least, I can provide some insight into working with 3D maths as a game or game engine developer.</description>
+    </item>
+    
+    <item>
+      <title>Not Invented Here</title>
+      <link>https://kevch.in/blog/not-invented-here/</link>
+      <pubDate>Sat, 11 Dec 2021 06:55:12 -0800</pubDate>
+      
+      <guid>https://kevch.in/blog/not-invented-here/</guid>
+      <description>The California Institute of Technology archived a photograph of Richard Feynman&amp;rsquo;s blackboard at the time of his death.
+  At the top, Feynman wrote: &amp;ldquo;What I cannot create, I do not understand.&amp;rdquo; This is a quote that resonates with me strongly. It&amp;rsquo;s an idea that John Carmack, founder of id Software and pioneer of computer games, seems to agree with.
+  &amp;ldquo;There are lots of viable paths through engineering.</description>
+    </item>
+    
     <item>
       <title>Add a Developer Console to your C&#43;&#43; Game in 20 Lines of Code</title>
       <link>https://kevch.in/blog/how-to-add-console-to-game/</link>
@@ -26,17 +46,6 @@ The following is an in-game console present in every Source game:</description>
       <guid>https://kevch.in/blog/switch-windows-app-to-console-app/</guid>
       <description>When making a C++ executable on Windows, you have the option of choosing between a Windows app and a Console app. A Windows app is an app with a GUI Window, and a Console app runs in the terminal (e.g. Windows Command Prompt). By switching over a Windows App to a Console App, you will get a command prompt window accompanying your GUI program Window.
 Linker Option Visual Studio or MSVC C++ Compiler Set the /SUBSYSTEM linker option of the MSVC compiler for your project to CONSOLE.</description>
-    </item>
-    
-    <item>
-      <title>John Carmack UMKC Commencement Speech</title>
-      <link>https://kevch.in/blog/john-carmack-speech/</link>
-      <pubDate>Tue, 30 Nov 2021 10:45:12 -0800</pubDate>
-      
-      <guid>https://kevch.in/blog/john-carmack-speech/</guid>
-      <description>The California Institute of Technology archived a photograph of Richard Feynman&amp;rsquo;s blackboard at the time of his death.
-  At the top, Feynman wrote: &amp;ldquo;What I cannot create, I do not understand.&amp;rdquo; This is a quote that resonates with me strongly. It&amp;rsquo;s an idea that John Carmack, founder of id Software and pioneer of computer games, seems to agree with.
-  &amp;ldquo;There are lots of viable paths through engineering.</description>
     </item>
     
     <item>
