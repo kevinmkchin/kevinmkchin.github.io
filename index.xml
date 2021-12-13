@@ -49,6 +49,16 @@ Linker Option Visual Studio or MSVC C++ Compiler Set the /SUBSYSTEM linker optio
     </item>
     
     <item>
+      <title>Quick Guide to PowerShell</title>
+      <link>https://kevch.in/blog/posh/</link>
+      <pubDate>Tue, 30 Nov 2021 14:17:35 -0800</pubDate>
+      
+      <guid>https://kevch.in/blog/posh/</guid>
+      <description>It&amp;rsquo;s difficult to find the perfect shell for Windows. There are some decent options out there (e.g. Cmder), but in many ways Microsoft&amp;rsquo;s own PowerShell (aka PoSh, PwSh, psh) is the best option for Windows. It&amp;rsquo;s also cross-platform! If you have workflow you are used to with PowerShell, you can have the same workflow regardless of the OS you&amp;rsquo;re on.
+PowerShell stands out from other shells available on Windows because it&amp;rsquo;s more than just a command line for interacting with Windows.</description>
+    </item>
+    
+    <item>
       <title>About Kevin Chin</title>
       <link>https://kevch.in/about/</link>
       <pubDate>Tue, 30 Nov 2021 00:00:23 -0800</pubDate>

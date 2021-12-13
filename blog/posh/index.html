@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Quick Guide to PowerShell" />
+<meta property="og:site_name" content="kev" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://kevch.in/blog/posh/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2021-11-30
+" /> <meta property="article:modified_time" content="2021-11-30
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kevinmkchin" />
+<meta name="twitter:creator" content="@kevinmkchin" />
+<meta
+  name="twitter:title"
+  content="Quick Guide to PowerShell | kev"
+/>
+<meta
+  name="twitter:description"
+  content="It&rsquo;s difficult to find the perfect shell for Windows. There are some decent options out there (e.g. Cmder), but in many ways Microsoft&rsquo;s own PowerShell (aka PoSh, PwSh, psh) is the best option for Windows. It&rsquo;s also cross-platform! If you have workflow you are used to with PowerShell, you can have the same workflow regardless of the OS you&rsquo;re on.
+PowerShell stands out from other shells available on Windows because it&rsquo;s more than just a command line for interacting with Windows.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://kevch.in/blog/posh/" />
+
+
+
+    <title>Quick Guide to PowerShell</title>
+    <link rel="canonical" href="https://kevch.in/blog/posh/" />
+      
+      
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://kevch.in/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-XXXXXXXXX-X', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="https://kevch.in/" class="b bb bw1 pb1 no-underline black">kev</a>
+  <span class="b"> / </span>
+  <a href="/blog" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Quick Guide to PowerShell</h1>
+    <span class="f6 gray">November 30, 2021</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        <figure><img src="/images/blog/posh.png"/>
+</figure>
+
+<p>It&rsquo;s difficult to find the perfect shell for Windows. There are some decent options out there (e.g. <a href="https://cmder.net/">Cmder</a>), but in many ways Microsoft&rsquo;s own PowerShell (aka PoSh, PwSh, psh) is the best option for Windows. It&rsquo;s also cross-platform! If you have workflow you are used to with PowerShell, you can have the same workflow regardless of the OS you&rsquo;re on.</p>
+<p>PowerShell stands out from other shells available on Windows because it&rsquo;s more than just a command line for interacting with Windows. PowerShell comes with it&rsquo;s own entire programming language for commands and scripts. I like to think of PowerShell as a &ldquo;shell++&rdquo; as in it has all the functionality of a shell + so much more. However, this doesn&rsquo;t make PowerShell more difficult to use than something like the Windows Command Prompt. PowerShell uses Aliases to map commands to easy to type shorthands/nicknames (you can create your own as well). The following are examples of commands and GNU core util program names aliased to their PowerShell equivalent:</p>
+<pre tabindex="0"><code>Alias    cd -&gt; Set-Location
+Alias    pushd -&gt; Push-Location
+Alias    cat -&gt; Get-Content
+Alias    pwd -&gt; Get-Location
+Alias    rm -&gt; Remove-Item
+</code></pre><p>As programmers we write a lot of scripts to automate our tasks. PowerShell essentially runs on the .NET Common Language Runtime which is the virtual machine that compiled C# run on. All inputs and outputs of PowerShell are .NET objects, and this makes scripting on PowerShell very powerful. You pretty much have the entirely of .NET at your disposal when scripting for PowerShell.</p>
+<p>If you decide to use PowerShell, you should get the latest version from the Microsoft Store.</p>
+<h2 id="running-programs">Running Programs</h2>
+<p>Running programs or scripts works the same as Unix shells. Note that the extension is optional.</p>
+<pre tabindex="0"><code>./SomeProgramName
+./SomeBatchFile
+./SomePowerShellScript
+</code></pre><h2 id="profile">Profile</h2>
+<p>A PowerShell profile is a script that runs when PowerShell starts. You can use the profile as a logon script to customize the environment. You can add commands, aliases, functions, variables, snap-ins, modules, and PowerShell drives.</p>
+<p>The path to the profile script is stored in the profile variable which we can retrieve with <code>$profile</code>. To check if there is already is a profile script, we can use the following psh function:</p>
+<pre tabindex="0"><code>Test-Path $profile
+</code></pre><p>If it prints false, we need to create the profile script:</p>
+<pre tabindex="0"><code>New-Item –Path $profile –Type File –Force
+</code></pre><p>Now you can open up and edit the profile script in any text editor you want:</p>
+<pre tabindex="0"><code>notepad $profile
+</code></pre><p>Personally, I use <a href="https://gist.github.com/kevinmkchin/72805399b2dc85d1c97a334aa1f5f91f">my profile</a> to set up the PATH environment variable and create handy functions (e.g. I have a function to launch the Visual Studio Developer Shell which provides the MSVC command-line compiler, CMake, etc.).</p>
+<h2 id="scripts">Scripts</h2>
+<p>In their simplest form, PowerShell scripts are a collection of PowerShell commands. This makes the transition from working with individual commands in the CLI to a fully automated script straight forward. You can write scripts to build and deploy websites, compile large projects, and whatever else you want.</p>
+<p>The following is a simple script I use to build my website from a static site generator and deploy to GitHub for hosting.</p>
+<pre tabindex="0"><code># deploy.ps1
+
+Remove-Item .\public\* -Recurse -Exclude CNAME, README*, .git
+hugo
+pushd public
+git pull origin master
+git add .
+git commit -m &quot;update&quot;
+git push origin master
+popd
+</code></pre><p>If you are interested in really grasping the potential of PowerShell, you should look into <a href="https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.2">&ldquo;cmdlets&rdquo;</a>. The commands that you run on PowerShell are all cmdlets. You can create your own cmdlets to further extend PowerShell.</p>
+<h2 id="customize">Customize</h2>
+<h3 id="customize-the-powershell-command-prompt">Customize the PowerShell command prompt</h3>
+<p>There is a built-in PowerShell function called <code>Prompt</code> which decorates PowerShell&rsquo;s command prompt. You can override this function in your PowerShell profile:</p>
+<pre tabindex="0"><code>function Prompt
+{
+    $host.ui.RawUI.WindowTitle = &quot;PwSh $pwd&quot;
+    Write-Host &quot;`n🌸 $pwd&quot; -ForegroundColor Green -NoNewline
+    if (Test-Path .git) { Write-GitBranchName } else { Write-Host }
+    $userPrompt = &quot;$('λ' * ($nestedPromptLevel + 1)) &quot;
+    return $userPrompt
+}
+</code></pre><p>By default, PowerShell&rsquo;s prompt is just your current working directory:</p>
+<pre tabindex="0"><code>PS C:\Users\kevin&gt;
+</code></pre><p>But by overriding the <code>Prompt</code> function, you can display all sorts of useful information in the prompt such as the currently checked out git branch when in a git repository. You can even add emojis for a bit of flair or have your prompt be multiple lines.</p>
+<pre tabindex="0"><code>🌸 C:\Dev\website (main)
+λ
+</code></pre><p>There is another way to customize the PowerShell command prompt. <a href="https://ohmyposh.dev/">Oh My Posh</a> is a very popular tool to customize and decorate your shell prompt. Take a look at the Oh My Posh documentation. Scott Hanselman also has a <a href="https://www.youtube.com/watch?v=VT2L1SXFq9U&amp;ab_channel=ScottHanselman">fun video</a> where he goes through setting up a new machine with PowerShell and Oh My Posh.</p>
+<p>You can use PowerShell from within Windows Terminal to have a nicer interface. With Windows Terminal, you can customize the font, colours, background, etc. of your GUI terminal.</p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: November 30, 2021. Published at: 2021-11-30.">
+        
+      </span>
+
+      
+
+  </section>
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2021 Copyright Kevin Chin (<a href='https://twitter.com/kevinmkchin'>@kevinmkchin</a>). All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kevchin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </body>
+</html>
