@@ -6,8 +6,17 @@
     <description>Recent content on kev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
-    <lastBuildDate>Sun, 12 Dec 2021 11:36:22 +0000</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2021 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
+    <lastBuildDate>Wed, 27 Apr 2022 11:35:17 +0000</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ascent</title>
+      <link>https://kevch.in/projects/ascent/</link>
+      <pubDate>Wed, 27 Apr 2022 11:35:17 +0000</pubDate>
+      
+      <guid>https://kevch.in/projects/ascent/</guid>
+      <description>redirecting...</description>
+    </item>
+    
     <item>
       <title>Some things I&#39;ve learned about 3D Math and Common sources of confusion</title>
       <link>https://kevch.in/blog/3d-math/</link>
@@ -71,7 +80,7 @@ PowerShell stands out from other shells available on Windows because it&amp;rsqu
     </item>
     
     <item>
-      <title>XNGINE - 3D Game Engine</title>
+      <title>XNGINE</title>
       <link>https://kevch.in/projects/xngine/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
@@ -90,7 +99,7 @@ How to Build and Run Windows  Run build-win64-cmake.bat (requires CMake) Run run
     </item>
     
     <item>
-      <title>Super Whiplash - Online Multiplayer Game</title>
+      <title>Super Whiplash</title>
       <link>https://kevch.in/projects/superwhiplash/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
@@ -110,7 +119,7 @@ Download Project Machina 0.1  Features currently implemented in the source code:
     </item>
     
     <item>
-      <title>Dream of Flight - Platformer Game</title>
+      <title>Dream of Flight</title>
       <link>https://kevch.in/projects/dream-of-flight/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -128,7 +137,7 @@ Download Release 1.0  Gameplay Video   Screenshots   </description>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/first-hello/</guid>
-      <description>redirecting... </description>
+      <description>redirecting...</description>
     </item>
     
     <item>
@@ -170,7 +179,7 @@ Download Demo Download Demo Gif  Screenshots   </description>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/ajax3d/</guid>
-      <description>redirecting... </description>
+      <description>redirecting...</description>
     </item>
     
   </channel>
