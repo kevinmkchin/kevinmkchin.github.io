@@ -126,7 +126,7 @@ if (!doNotTrack) {
 <p><img src="/images/blog/console-1.png" alt=""></p>
 <p>We want to use the terminal window accompanying our GUI game window as our console interface.
 We create the console backend simply by declaring one.</p>
-<pre tabindex="0"><code>#include &quot;noclip.h&quot;
+<pre tabindex="0"><code>#include &#34;noclip.h&#34;
 noclip::console console;
 </code></pre><p>To call <code>console.execute</code>, we need an input stream and an output stream. Since we are using the terminal, we can use <code>std::cin</code> and <code>std::cout</code>, just like when we first learned how to print &lsquo;Hello World!&rsquo; in C++.</p>
 <pre tabindex="0"><code>int main()
@@ -158,7 +158,7 @@ void PollConsoleInput()
         std::cin &gt;&gt; input;
 
         std::lock_guard&lt;std::mutex&gt; lock(consoleCommandQueueMutex); // lock mutex before writing to command queue
-        consoleCommandQueue = consoleCommandQueue + &quot; &quot; + input;
+        consoleCommandQueue = consoleCommandQueue + &#34; &#34; + input;
     }
 }
 
@@ -194,11 +194,11 @@ void CheckConsoleCommandQueue()
 }
 </code></pre><p>Before exiting the program, we must ensure that we <code>detach</code> the thread polling <code>std::cin</code>. This allows us to exit our main thread execution without joining or terminating the second thread.</p>
 <p>That&rsquo;s it! We&rsquo;ve successfully added a developer console to our game/program. You can go ahead and type in commands into the terminal interface while the game runs. It&rsquo;s a little boring right now because we haven&rsquo;t added any custom console variables or commands. We can easily ameliorate that:</p>
-<pre tabindex="0"><code>std::string bgColor = &quot;blue&quot;;
+<pre tabindex="0"><code>std::string bgColor = &#34;blue&#34;;
 
 void Initialize()
 {
-    console.bind_cvar(&quot;color&quot;, &amp;bgColor);
+    console.bind_cvar(&#34;color&#34;, &amp;bgColor);
 }
 
 void Render()
@@ -237,7 +237,7 @@ void Render()
 
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
