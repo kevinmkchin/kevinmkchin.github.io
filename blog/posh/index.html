@@ -150,7 +150,7 @@ hugo
 pushd public
 git pull origin master
 git add .
-git commit -m &quot;update&quot;
+git commit -m &#34;update&#34;
 git push origin master
 popd
 </code></pre><p>If you are interested in really grasping the potential of PowerShell, you should look into <a href="https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.2">&ldquo;cmdlets&rdquo;</a>. The commands that you run on PowerShell are all cmdlets. You can create your own cmdlets to further extend PowerShell.</p>
@@ -159,10 +159,10 @@ popd
 <p>There is a built-in PowerShell function called <code>Prompt</code> which decorates PowerShell&rsquo;s command prompt. You can override this function in your PowerShell profile:</p>
 <pre tabindex="0"><code>function Prompt
 {
-    $host.ui.RawUI.WindowTitle = &quot;PwSh $pwd&quot;
-    Write-Host &quot;`n🌸 $pwd&quot; -ForegroundColor Green -NoNewline
+    $host.ui.RawUI.WindowTitle = &#34;PwSh $pwd&#34;
+    Write-Host &#34;`n🌸 $pwd&#34; -ForegroundColor Green -NoNewline
     if (Test-Path .git) { Write-GitBranchName } else { Write-Host }
-    $userPrompt = &quot;$('λ' * ($nestedPromptLevel + 1)) &quot;
+    $userPrompt = &#34;$(&#39;λ&#39; * ($nestedPromptLevel + 1)) &#34;
     return $userPrompt
 }
 </code></pre><p>By default, PowerShell&rsquo;s prompt is just your current working directory:</p>
@@ -202,7 +202,7 @@ popd
 
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

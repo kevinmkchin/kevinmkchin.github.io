@@ -14,7 +14,7 @@
       <pubDate>Wed, 27 Apr 2022 11:35:17 +0000</pubDate>
       
       <guid>https://kevch.in/projects/ascent/</guid>
-      <description>redirecting...</description>
+      <description>redirecting... </description>
     </item>
     
     <item>
@@ -33,8 +33,8 @@
       
       <guid>https://kevch.in/blog/not-invented-here/</guid>
       <description>The California Institute of Technology archived a photograph of Richard Feynman&amp;rsquo;s blackboard at the time of his death.
-  At the top, Feynman wrote: &amp;ldquo;What I cannot create, I do not understand.&amp;rdquo; This is a quote that resonates with me strongly. It&amp;rsquo;s an idea that John Carmack, founder of id Software and pioneer of computer games, seems to agree with.
-  &amp;ldquo;There are lots of viable paths through engineering.</description>
+At the top, Feynman wrote: &amp;ldquo;What I cannot create, I do not understand.&amp;rdquo; This is a quote that resonates with me strongly. It&amp;rsquo;s an idea that John Carmack, founder of id Software and pioneer of computer games, seems to agree with.
+&amp;ldquo;There are lots of viable paths through engineering. The path I advocate for is &amp;lsquo;knowledge in depth&amp;rsquo; - for knowing things really deeply.</description>
     </item>
     
     <item>
@@ -73,10 +73,10 @@ PowerShell stands out from other shells available on Windows because it&amp;rsqu
       <pubDate>Tue, 30 Nov 2021 00:00:23 -0800</pubDate>
       
       <guid>https://kevch.in/about/</guid>
-      <description>Current Software engineer intern at Unity
-  Previously Worked on an unannounced multiplayer FPS game at Offworld Industries   Contact  GitHub - @kevinmkchin
- Twitter - @kevinmkchin
- LinkedIn - @kevinmkchin</description>
+      <description>Current Software engineer at Unity
+Previously Worked on an unannounced multiplayer FPS game at Offworld Industries Contact GitHub - @kevinmkchin
+Twitter - @kevinmkchin
+LinkedIn - @kevinmkchin</description>
     </item>
     
     <item>
@@ -86,7 +86,7 @@ PowerShell stands out from other shells available on Windows because it&amp;rsqu
       
       <guid>https://kevch.in/projects/xngine/</guid>
       <description>GitHub 3D graphics game engine written in C++ with OpenGL. GLEW for OpenGL interface. SDL for window creation and input. Open Asset Importer for importing 3D models.
-How to Build and Run Windows  Run build-win64-cmake.bat (requires CMake) Run run.bat (with argument &amp;ldquo;vs&amp;rdquo; if you want to launch Visual Studio to debug) Profit  Features Deferred rendering Tiled light culling The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.</description>
+How to Build and Run Windows Run build-win64-cmake.bat (requires CMake) Run run.bat (with argument &amp;ldquo;vs&amp;rdquo; if you want to launch Visual Studio to debug) Profit Features Deferred rendering Tiled light culling The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.</description>
     </item>
     
     <item>
@@ -115,7 +115,7 @@ How to Build and Run Windows  Run build-win64-cmake.bat (requires CMake) Run run
       <guid>https://kevch.in/projects/project-machina/</guid>
       <description>3D game made in Java with OpenGL inspired by 90&amp;rsquo;s FPS games like Doom and Hexen.
 [W][A][S][D] to move, [SPACE] to jump, [LMB] to shoot.
-Download Project Machina 0.1  Features currently implemented in the source code:  Collision through Pixel-perfect Axis-Aligned Bounding Box Chunk-loading (loading revelant chunks of a level instead of the entire level) Random level generation Save and Load level files Scenes and Entities GUI      History This game is built off of a heavily modified version of my game engine that I wrote in 2019: Ajax Engine</description>
+Download Project Machina 0.1 Features currently implemented in the source code: Collision through Pixel-perfect Axis-Aligned Bounding Box Chunk-loading (loading revelant chunks of a level instead of the entire level) Random level generation Save and Load level files Scenes and Entities GUI History This game is built off of a heavily modified version of my game engine that I wrote in 2019: Ajax Engine</description>
     </item>
     
     <item>
@@ -128,7 +128,7 @@ Download Project Machina 0.1  Features currently implemented in the source code:
 [A] to move left, [D] to move right, [J] to jump, [K] to toggle flying.
 Levels for this game are made using an old level editor I made: Bambuu TileMap Editor
 Source Code GitHub Repo
-Download Release 1.0  Gameplay Video   Screenshots   </description>
+Download Release 1.0 Gameplay Video Screenshots </description>
     </item>
     
     <item>
@@ -137,7 +137,7 @@ Download Release 1.0  Gameplay Video   Screenshots   </description>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/first-hello/</guid>
-      <description>redirecting...</description>
+      <description>redirecting... </description>
     </item>
     
     <item>
@@ -149,7 +149,7 @@ Download Release 1.0  Gameplay Video   Screenshots   </description>
       <description>GitHub This is a demonstration of a video game graphics rendering technique known as Raycasting (find out more about raycasting here: Raycasting Explained). Inspired by John Carmack&amp;rsquo;s implementation of raycasting in Wolfenstein 3D.
 The tile map editor that I made to create levels for this the demo became a standalone tile map/level editor which I used for other projects: Bambuu TileMap Editor.
 [W][A][S][D] to move.
-Download Demo Download Demo gifs   </description>
+Download Demo Download Demo gifs </description>
     </item>
     
     <item>
@@ -159,7 +159,7 @@ Download Demo Download Demo gifs   </description>
       
       <guid>https://kevch.in/projects/bambuu/</guid>
       <description>TileMap/Level creator for video games.
-Download Release 1.0.0 Features  Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later). Fill screen tool. Variable TileMap dimensions.</description>
+Download Release 1.0.0 Features Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later). Fill screen tool. Variable TileMap dimensions.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ Download Release 1.0.0 Features  Quickly and easily create tilemaps/levels for p
       <guid>https://kevch.in/projects/settlers/</guid>
       <description>Roguelike project that uses Perlin noise to procedurally generate the world.
 I gained experience working with the concept of tiles in both 2 and 3 dimensions. This was very beneficial to me in my future projects such as the Bambuu Tilemap Editor, the Raycasting Demonstration, and the Arx Aeternus OpenGL game, all of which use some variation of tilemaps.
-Download Demo Download Demo Gif  Screenshots   </description>
+Download Demo Download Demo Gif Screenshots </description>
     </item>
     
     <item>
@@ -179,7 +179,7 @@ Download Demo Download Demo Gif  Screenshots   </description>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/ajax3d/</guid>
-      <description>redirecting...</description>
+      <description>redirecting... </description>
     </item>
     
   </channel>
