@@ -158,8 +158,8 @@ Download Demo Download Demo gifs </description>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/bambuu/</guid>
-      <description>TileMap/Level creator for video games.
-Download Release 1.0.0 Features Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later). Fill screen tool. Variable TileMap dimensions.</description>
+      <description>2022-10-31: The improved version, bambuu2, is available on GitHub: https://github.com/kevinmkchin/bambuu2 Bambuu TileMap/Level creator for video games.
+Download Release 1.0.0 Features Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later).</description>
     </item>
     
     <item>
