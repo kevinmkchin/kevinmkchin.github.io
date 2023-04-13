@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on kev</title>
+    <title>Blogs on kevin c</title>
     <link>https://kevch.in/blog/</link>
-    <description>Recent content in Blogs on kev</description>
+    <description>Recent content in Blogs on kevin c</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2022 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
+    <copyright>© 2023 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
     <lastBuildDate>Sun, 12 Dec 2021 11:36:22 +0000</lastBuildDate><atom:link href="https://kevch.in/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some things I&#39;ve learned about 3D Math and Common sources of confusion</title>
@@ -36,16 +36,6 @@ At the top, Feynman wrote: &amp;ldquo;What I cannot create, I do not understand.
       <guid>https://kevch.in/blog/how-to-add-console-to-game/</guid>
       <description>Many computer games have a developer console or in-game console which provide a command-line interface for executing commands, changing game variables, or activating cheats. It&amp;rsquo;s a very useful feature seen in many games like Quake, Skyrim, Minecraft, and Counter-Strike. In this guide, I will explain how to add a complete developer console to your C++ game in 20 lines of code.
 The following is an in-game console present in every Source game:</description>
-    </item>
-    
-    <item>
-      <title>How to switch Windows App to Console App</title>
-      <link>https://kevch.in/blog/switch-windows-app-to-console-app/</link>
-      <pubDate>Wed, 08 Dec 2021 10:47:57 -0800</pubDate>
-      
-      <guid>https://kevch.in/blog/switch-windows-app-to-console-app/</guid>
-      <description>When making a C++ executable on Windows, you have the option of choosing between a Windows app and a Console app. A Windows app is an app with a GUI Window, and a Console app runs in the terminal (e.g. Windows Command Prompt). By switching over a Windows App to a Console App, you will get a command prompt window accompanying your GUI program Window.
-Linker Option Visual Studio or MSVC C++ Compiler Set the /SUBSYSTEM linker option of the MSVC compiler for your project to CONSOLE.</description>
     </item>
     
     <item>

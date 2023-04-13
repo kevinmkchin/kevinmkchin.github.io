@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on kev</title>
+    <title>Series on kevin c</title>
     <link>https://kevch.in/series/</link>
-    <description>Recent content in Series on kev</description>
+    <description>Recent content in Series on kevin c</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2022 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright><atom:link href="https://kevch.in/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2023 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright><atom:link href="https://kevch.in/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
