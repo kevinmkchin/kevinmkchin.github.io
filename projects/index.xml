@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on kevin c</title>
+    <title>Projects on kevinmkchin&#39;s website</title>
     <link>https://kevch.in/projects/</link>
-    <description>Recent content in Projects on kevin c</description>
+    <description>Recent content in Projects on kevinmkchin&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2023 Copyright Kevin Chin (&lt;a href=&#39;https://twitter.com/kevinmkchin&#39; style=&#39;text-decoration: none;&#39;&gt;@kevinmkchin&lt;/a&gt;). All rights reserved.</copyright>
     <lastBuildDate>Wed, 27 Apr 2022 11:35:17 +0000</lastBuildDate><atom:link href="https://kevch.in/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ascent</title>
@@ -14,7 +13,7 @@
       <pubDate>Wed, 27 Apr 2022 11:35:17 +0000</pubDate>
       
       <guid>https://kevch.in/projects/ascent/</guid>
-      <description>redirecting... </description>
+      <description>redirecting...</description>
     </item>
     
     <item>
@@ -75,7 +74,7 @@ Download Release 1.0 Gameplay Video Screenshots </description>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/first-hello/</guid>
-      <description>redirecting... </description>
+      <description>redirecting...</description>
     </item>
     
     <item>
@@ -117,7 +116,7 @@ Download Demo Download Demo Gif Screenshots </description>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kevch.in/projects/ajax3d/</guid>
-      <description>redirecting... </description>
+      <description>redirecting...</description>
     </item>
     
   </channel>
