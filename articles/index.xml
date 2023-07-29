@@ -6,7 +6,17 @@
     <description>Recent content in Articles on kevinmkchin&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jun 2023 20:25:32 +0000</lastBuildDate><atom:link href="https://kevch.in/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 15:41:02 +0000</lastBuildDate><atom:link href="https://kevch.in/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cmder</title>
+      <link>https://kevch.in/articles/cmder/</link>
+      <pubDate>Fri, 28 Jul 2023 15:41:02 +0000</pubDate>
+      
+      <guid>https://kevch.in/articles/cmder/</guid>
+      <description>Quick write up on setting up a new Windows computer with development tools that I use.
+# setup.ps1# https://scoop.sh/Set-ExecutionPolicy RemoteSigned -Scope CurrentUserirm get.scoop.sh | iexscoop bucket add mainscoop bucket add extrasscoop install main/cmder-full # cmder https://github.com/cmderdev/cmder comes with git-for-windowsscoop install extras/sublime-text # subl https://www.sublimetext.com/scoop install extras/fork # fork https://git-fork.com/scoop install extras/renderdoc # renderdocgui | renderdoccli https://renderdoc.org/scoop install hugo # hugo https://gohugo.</description>
+    </item>
+    
     <item>
       <title>The Visionary</title>
       <link>https://kevch.in/articles/thevisionary/</link>
