@@ -169,11 +169,20 @@ scoop install extras/vlc            # https://www.videolan.org/
 scoop install extras/color-cop      # http://colorcop.net/
 scoop install extras/deskpins       # https://efotinis.neocities.org/deskpins/
 
+
 # Cmder
+
+Write-Host &#34;Running init.bat for Cmder&#34;
+&amp; ($env:CMDER_ROOT + &#34;\vendor\init.bat&#34;)
 
 ## add visual studio developer tools to user_profile.cmd   https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2022
 
 Add-Content ($env:CMDER_ROOT + &#34;\config\user_profile.cmd&#34;) &#34;`ncall `&#34;C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/VsDevCmd.bat`&#34; -arch=amd64 `n&#34;
+
+## Other plugins to PATH
+
+Add-Content ($env:CMDER_ROOT + &#34;\config\user_profile.cmd&#34;) &#34;`nset PATH=C:\Notes;%PATH% `n&#34;
+
 
 # StartUp programs
 
