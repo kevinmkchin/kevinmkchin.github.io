@@ -6,158 +6,112 @@
     <description>Recent content on kevinmkchin&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jul 2023 15:41:02 +0000</lastBuildDate><atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 15:41:02 +0000</lastBuildDate>
+    <atom:link href="https://kevch.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cmder</title>
       <link>https://kevch.in/articles/cmder/</link>
       <pubDate>Fri, 28 Jul 2023 15:41:02 +0000</pubDate>
-      
       <guid>https://kevch.in/articles/cmder/</guid>
-      <description>Quick write up on setting up a new Windows computer with development tools that I use.
-# setup.ps1# https://scoop.sh/Set-ExecutionPolicy RemoteSigned -Scope CurrentUserirm get.scoop.sh | iexscoop bucket add mainscoop bucket add extrasscoop install main/cmder-full # cmder https://github.com/cmderdev/cmder comes with git-for-windowsscoop install extras/sublime-text # subl https://www.sublimetext.com/scoop install extras/fork # fork https://git-fork.com/scoop install extras/renderdoc # renderdocgui | renderdoccli https://renderdoc.org/scoop install hugo # hugo https://gohugo.</description>
+      <description>Quick write up on setting up a new Windows computer with development tools that I use.&#xA;# setup.ps1&#xD;# https://scoop.sh/&#xD;Set-ExecutionPolicy RemoteSigned -Scope CurrentUser&#xD;irm get.scoop.sh | iex&#xD;scoop bucket add main&#xD;scoop bucket add extras&#xD;scoop install main/cmder-full # cmder https://github.com/cmderdev/cmder comes with git-for-windows&#xD;scoop install extras/sublime-text # subl https://www.sublimetext.com/&#xD;scoop install extras/fork # fork https://git-fork.com/&#xD;scoop install extras/renderdoc # renderdocgui | renderdoccli https://renderdoc.org/&#xD;scoop install hugo # hugo https://gohugo.</description>
     </item>
-    
     <item>
       <title>The Visionary</title>
       <link>https://kevch.in/articles/thevisionary/</link>
       <pubDate>Thu, 29 Jun 2023 20:25:32 +0000</pubDate>
-      
       <guid>https://kevch.in/articles/thevisionary/</guid>
-      <description>It took nearly two years, but I had completed my Magnum Opus. This was what I was going to be remembered for. I typed the last few lines of code. The final touches.
-I put out my cigarette. I left the window open to let in the distant sound of cars and people crossing the Brooklyn Bridge. Littering the apartment were crumpled-up diagrams and formulas along with unopened letters from my fans.</description>
+      <description>It took nearly two years, but I had completed my Magnum Opus. This was what I was going to be remembered for. I typed the last few lines of code. The final touches.&#xA;I put out my cigarette. I had left the window open to let in the distant sound of cars and people crossing the Brooklyn Bridge. Littering the apartment were crumpled-up diagrams and formulas along with unopened letters from my fans.</description>
     </item>
-    
     <item>
       <title>Ascent</title>
       <link>https://kevch.in/projects/ascent/</link>
       <pubDate>Wed, 27 Apr 2022 11:35:17 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/ascent/</guid>
-      <description>redirecting...</description>
+      <description>redirecting...&#xD;</description>
     </item>
-    
     <item>
       <title>Some things I&#39;ve learned about 3D math and common sources of confusion</title>
       <link>https://kevch.in/articles/3d-math/</link>
       <pubDate>Sun, 12 Dec 2021 11:36:22 +0000</pubDate>
-      
       <guid>https://kevch.in/articles/3d-math/</guid>
-      <description>Having worked with linear algebra and math in 3D spaces for years now, I think it could be valuable to share some things that I&amp;rsquo;ve learned and some common sources of confusion when it comes to working in 3D spaces. At the very least, I can provide some insight into working with 3D maths as a game or game engine developer.
-Standards Order of Rotations Quaternions Coordinate Spaces Conclusion Further Reading Standards Algebra is relative to rules that we establish.</description>
+      <description>Having worked with linear algebra and math in 3D spaces for years now, I think it could be valuable to share some things that I&amp;rsquo;ve learned and some common sources of confusion when it comes to working in 3D spaces. At the very least, I can provide some insight into working with 3D maths as a game or game engine developer.&#xA;Standards Order of Rotations Quaternions Coordinate Spaces Conclusion Further Reading Standards Algebra is relative to rules that we establish.</description>
     </item>
-    
     <item>
       <title>XNGINE</title>
       <link>https://kevch.in/projects/xngine/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/xngine/</guid>
-      <description>GitHub 3D graphics game engine written in C++ with OpenGL. GLEW for OpenGL interface. SDL for window creation and input. Open Asset Importer for importing 3D models.
-How to Build and Run Windows Run build-win64-cmake.bat (requires CMake) Run run.bat (with argument &amp;ldquo;vs&amp;rdquo; if you want to launch Visual Studio to debug) Profit Features Deferred rendering Tiled light culling The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.</description>
+      <description>GitHub 3D graphics game engine written in C++ with OpenGL. GLEW for OpenGL interface. SDL for window creation and input. Open Asset Importer for importing 3D models.&#xA;How to Build and Run Windows Run build-win64-cmake.bat (requires CMake) Run run.bat (with argument &amp;ldquo;vs&amp;rdquo; if you want to launch Visual Studio to debug) Profit Features Deferred rendering Tiled light culling The following image shows a scene with 4000 light sources running at an acceptable 76 frames per second.</description>
     </item>
-    
     <item>
       <title>ADK (Ayax Development Kit)</title>
       <link>https://kevch.in/projects/adk/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/adk/</guid>
       <description>GitHub &amp;ldquo;Hey, good luck on your engine.&amp;rdquo; - Noel Berry Aug 14, 2020 at a bouldering gym Purpose Ayax Development Kit is a collection of tools and resources that one would want in order to create a 2D video game. In essence, ADK is an easy-to-use C++ game engine for building modern 2D games, but it includes several useful game systems such as character controllers, cameras, and common game objects such as trigger boxes.</description>
     </item>
-    
     <item>
       <title>Super Whiplash</title>
       <link>https://kevch.in/projects/superwhiplash/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/superwhiplash/</guid>
       <description>Steam Store Page I created an online multiplayer vehicular combat game inspired by Twisted Metal called Super Whiplash. This was a significant challenge because the built-in UE4 vehicle controller doesn&amp;rsquo;t work very well in multiplayer. I implemented an entirely new vehicle physics system with framerate independent physics. I networked vehicle physics (e.g. force, traction, etc.) in a way that would work with my system. The result is a bit janky but still more reliable than the built-in UE4 vehicle controller.</description>
     </item>
-    
     <item>
       <title>Project Machina</title>
       <link>https://kevch.in/projects/project-machina/</link>
       <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/project-machina/</guid>
-      <description>3D game made in Java with OpenGL inspired by 90&amp;rsquo;s FPS games like Doom and Hexen.
-[W][A][S][D] to move, [SPACE] to jump, [LMB] to shoot.
-Download Project Machina 0.1 Features currently implemented in the source code: Collision through Pixel-perfect Axis-Aligned Bounding Box Chunk-loading (loading revelant chunks of a level instead of the entire level) Random level generation Save and Load level files Scenes and Entities GUI History This game is built off of a heavily modified version of my game engine that I wrote in 2019: Ajax Engine</description>
+      <description>3D game made in Java with OpenGL inspired by 90&amp;rsquo;s FPS games like Doom and Hexen.&#xA;[W][A][S][D] to move, [SPACE] to jump, [LMB] to shoot.&#xA;Download Project Machina 0.1 Features currently implemented in the source code: Collision through Pixel-perfect Axis-Aligned Bounding Box Chunk-loading (loading revelant chunks of a level instead of the entire level) Random level generation Save and Load level files Scenes and Entities GUI History This game is built off of a heavily modified version of my game engine that I wrote in 2019: Ajax Engine</description>
     </item>
-    
     <item>
       <title>Dream of Flight</title>
       <link>https://kevch.in/projects/dream-of-flight/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/dream-of-flight/</guid>
-      <description>A 2D platformer game inspired by EXOK&amp;rsquo;s Celeste. Built with C# on the MonoGame Framework.
-[A] to move left, [D] to move right, [J] to jump, [K] to toggle flying.
-Levels for this game are made using an old level editor I made: Bambuu TileMap Editor
-Source Code GitHub Repo
-Download Release 1.0 Gameplay Video Screenshots </description>
+      <description>A 2D platformer game inspired by EXOK&amp;rsquo;s Celeste. Built with C# on the MonoGame Framework.&#xA;[A] to move left, [D] to move right, [J] to jump, [K] to toggle flying.&#xA;Levels for this game are made using an old level editor I made: Bambuu TileMap Editor&#xA;Source Code GitHub Repo&#xA;Download Release 1.0 Gameplay Video Screenshots </description>
     </item>
-    
     <item>
       <title>first hello</title>
       <link>https://kevch.in/projects/first-hello/</link>
       <pubDate>Thu, 09 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/first-hello/</guid>
-      <description>redirecting...</description>
+      <description>redirecting...&#xD;</description>
     </item>
-    
     <item>
       <title>Raycasting Renderer</title>
       <link>https://kevch.in/projects/raycasting/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/raycasting/</guid>
-      <description>GitHub This is a demonstration of a video game graphics rendering technique known as Raycasting (find out more about raycasting here: Raycasting Explained). Inspired by John Carmack&amp;rsquo;s implementation of raycasting in Wolfenstein 3D.
-The tile map editor that I made to create levels for this the demo became a standalone tile map/level editor which I used for other projects: Bambuu TileMap Editor.
-[W][A][S][D] to move.
-Download Demo Download Demo gifs </description>
+      <description>GitHub This is a demonstration of a video game graphics rendering technique known as Raycasting (find out more about raycasting here: Raycasting Explained). Inspired by John Carmack&amp;rsquo;s implementation of raycasting in Wolfenstein 3D.&#xA;The tile map editor that I made to create levels for this the demo became a standalone tile map/level editor which I used for other projects: Bambuu TileMap Editor.&#xA;[W][A][S][D] to move.&#xA;Download Demo Download Demo gifs </description>
     </item>
-    
     <item>
       <title>Bambuu Level Editor</title>
       <link>https://kevch.in/projects/bambuu/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/bambuu/</guid>
-      <description>2022-10-31: The improved version, bambuu2, is available on GitHub: https://github.com/kevinmkchin/bambuu2 Bambuu TileMap/Level creator for video games.
-Download Release 1.0.0 Features Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later).</description>
+      <description>2022-10-31: The improved version, bambuu2, is available on GitHub: https://github.com/kevinmkchin/bambuu2 Bambuu TileMap/Level creator for video games.&#xA;Download Release 1.0.0 Features Quickly and easily create tilemaps/levels for platformers, top-down shooters, etc. Use your own custom image files for the tiles. Save and load tilemaps for iterative level design. Up to 3 layers for a single tilemap file. (e.g. one layer for level, one layer for enemies, one layer for items) Up to 48 tiles (will add more later).</description>
     </item>
-    
     <item>
       <title>Settlers of the Rapture</title>
       <link>https://kevch.in/projects/settlers/</link>
       <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/settlers/</guid>
-      <description>Roguelike project that uses Perlin noise to procedurally generate the world.
-I gained experience working with the concept of tiles in both 2 and 3 dimensions. This was very beneficial to me in my future projects such as the Bambuu Tilemap Editor, the Raycasting Demonstration, and the Arx Aeternus OpenGL game, all of which use some variation of tilemaps.
-Download Demo Download Demo Gif Screenshots </description>
+      <description>Roguelike project that uses Perlin noise to procedurally generate the world.&#xA;I gained experience working with the concept of tiles in both 2 and 3 dimensions. This was very beneficial to me in my future projects such as the Bambuu Tilemap Editor, the Raycasting Demonstration, and the Arx Aeternus OpenGL game, all of which use some variation of tilemaps.&#xA;Download Demo Download Demo Gif Screenshots </description>
     </item>
-    
     <item>
       <title>Ajax 3D Engine</title>
       <link>https://kevch.in/projects/ajax3d/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/projects/ajax3d/</guid>
-      <description>redirecting...</description>
+      <description>redirecting...&#xD;</description>
     </item>
-    
     <item>
       <title>About</title>
       <link>https://kevch.in/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://kevch.in/about/</guid>
-      <description>Hi, my name is Kevin Chin, and I&amp;rsquo;m a software developer at Unity where I work on Scene Tooling. In the past, I&amp;rsquo;ve made computer games, plumbed graphics pipelines, created numerous softwares and libraries, and TA&amp;rsquo;ed computer graphics students at the University of British Columbia. I love enabling artists to be creative, and I&amp;rsquo;m passionate about game engine architecture.
-Prior to Unity, I made Starship Troopers: Extermination at Offworld Industries.</description>
+      <description>Hi, my name is Kevin Chin, and I&amp;rsquo;m a software developer at Unity where I work on Scene Tooling. In the past, I&amp;rsquo;ve made computer games, plumbed graphics pipelines, created numerous softwares and libraries, and TA&amp;rsquo;ed computer graphics students at the University of British Columbia. I love enabling artists to be creative, and I&amp;rsquo;m passionate about game engine architecture.&#xA;Prior to Unity, I made Starship Troopers: Extermination at Offworld Industries.</description>
     </item>
-    
   </channel>
 </rss>
