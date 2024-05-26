@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+    <style>
+        html {
+            margin: auto;
+            padding: 1em;
+            max-width: 44em;
+        }
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+        }
+        body { 
+            background-color:rgba(245,245,240,1.0);
+        }
+        img {
+            max-width: 44em;
+            width: 100%;
+        }
+    </style>
+
+<title>kevin.gd - Wolfenstein 3D-esque Raycaster</title>
+    <a href="index.html">back to home</a>
+<h1 id="wolfenstein-3d-esque-raycaster">Wolfenstein 3D-esque Raycaster</h1>
+<p>In 2019 I learned about how Wolfenstein 3D renders its top-down 2D shooter through raycasting to create depth and perspective and a first person point of view. I found it interesting and wanted to write my own program that did the same thing. I hadn't started writing C/C++ code by that time, so I wrote this program in Java.</p>
+<p><img alt="" src="images/rayjax.gif" /></p>
+<p>I found a great explanation by <a href="https://lodev.org/cgtutor/raycasting.html">Lode Vandevenne</a>, and I had fun writing my own raycaster. It was a good coding exercise and it continued my journey into game development and engineering.</p>
+<p><a href="https://github.com/kevinmkchin/rayjax-engine">github</a><br />
+<a href="downloads/rayjax-demo.zip">download demo</a></p>
+<p>To create levels for this raycaster, I wrote a basic editor for 2D tile maps in Java using Swing (what a dogshit UI library my god). I ended up using this tile map editor for my other games like <a href="https://github.com/kevinmkchin/dream-of-flight-source">Dream of Flight</a>.</p>
+<p><img alt="" src="images/bb_0.png" /></p>
+<p><a href="https://github.com/kevinmkchin/bambuu">tile map editor github</a></p>
+<p>In 2022, I lead a group of 6 students to create a game from scratch in C++. I had the most experience so I ended up doing the majority of the coding for the engine and the game. <a href="https://kevinmkchin.itch.io/ascent">The game</a> can be found on itch.io. </p>
+<p><img alt="" src="images/ascent_0.jpg" /></p>
+<p>We were creating a 2D roguelike platformer, and I wrote the procedural level generation code similarly to how Spelunky does its level generation. For this I needed to handcraft rooms that were stitched together to create the illusion of randomness. So I wrote version 2 of the tile map editor.</p>
+<p>I just wanted to pump out something usable quickly, so this time I wrote everything in HTML5 despite my dislike of web tech. </p>
+<p><img alt="" src="images/bb2_0.png" /></p>
+<p><a href="https://github.com/kevinmkchin/bambuu2">tile map editor 2 github</a></p>
+<p>This was a simple side thing to be able to make levels for the main game. I put very little effort into it and whipped it up fairly quickly, but it's still miles better and way more powerful than my first tile map editor.</p>
+</html>
