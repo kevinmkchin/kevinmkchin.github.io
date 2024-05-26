@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+    <style>
+        html {
+            margin: auto;
+            padding: 1em;
+            max-width: 44em;
+        }
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+        }
+        body { 
+            background-color:rgba(245,245,240,1.0);
+        }
+        img {
+            max-width: 44em;
+            width: 100%;
+        }
+    </style>
+
+<title>kevin.gd - Ajax 3D toy renderer</title>
+    <a href="index.html">back to home</a>
+<h1 id="ajax-3d">Ajax 3D</h1>
+<p>I worked on this project in early 2019, and it was my first foray into making 3D applications. It was my introduction to computer graphics and writing graphics code and shaders, and it was an essential first step. It probably set off my interest in game dev technologies and engine architecture, and showed me how fun it is to make this stuff from scratch and open blackboxes and learn the inner workings of these intricate machinery we call engines.</p>
+<p>I imitated concepts like scenes and entities from other 3D applications I encountered at the time namely Unity, Unreal, Blender. In hindsight, the things I did in this project like writing an .obj importer and glsl shaders taught me things like mesh representations and basic rendering techniques which gave me a good basis to continue growing my knowledge in computer graphics and game development.</p>
+<p><img alt="" src="images/ajax3d-stanford-dragon.png" /><br />
+https://github.com/kevinmkchin/ajax-engine</p>
+<p>I took this and tried to make something with it. I initially wanted to make a 3D adaptation of the roguelike Cataclysm: Dark Days Ahead. I modified my engine to be voxel based like Minecraft loading 64x64x64 chunks at a time.</p>
+<p><img alt="" src="images/ajax3d-minecraft.jpg" /></p>
+<p>I don't quite remember anymore, but I think I was rendering and checking collisions for every single voxel that was loaded in each frame. I didn't know any better at the time, but anyways it ran painfully slow for even the simplest scenes. I put this project away, took everything I learned, and moved onto other things. </p>
+<p>I had left this project as is for some time before I returned to it to quickly whip up a FPS demo.</p>
+<p><img alt="" src="images/ajax3d-fps.png" /><br />
+<img alt="" src="images/arx-gameplay.gif" /><br />
+<img alt="" src="images/arx-level.gif" /><br />
+https://github.com/kevinmkchin/arx-aeternus/</p>
+<p><a href="downloads/rapture-demo.zip">download voxel demo</a><br />
+<a href="downloads/Arx-Aeternus-0.1.zip">download fps demo</a></p>
+</html>
