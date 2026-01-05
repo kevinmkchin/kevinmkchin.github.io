@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+    <style>
+        html {
+            margin: auto;
+            padding: 1em;
+            max-width: 44em;
+        }
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+        }
+        body { 
+            background-color:rgba(245,245,240,1.0);
+        }
+        img {
+            max-width: 44em;
+            width: 100%;
+        }
+        figcaption {
+            color: rgba(120,120,120,1.0);
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+
+<title>kevin.gd - Untitled FPS Game</title>
+    <a href="index.html">back to home</a>
+<h1 id="untitled-fps-game">Untitled FPS Game</h1>
+<p>This is a quick feature overview of my custom engine and work-in-progress untitled game.</p>
+<p>
+<figure><a href="images/fps/fps1.gif"><img alt="" src="images/fps/fps1.gif" /></a></figure>
+</p>
+<h3 id="baked-lightmaps">Baked Lightmaps</h3>
+<p>Static direct lighting and indirect bounce lighting information is baked into lightmaps. The current version uses raytracing hardware to perform Monte Carlo path-tracing on the GPU and calculate the bounce lighting that each surface luxel receives. Previously, I had written a slower hemicube rendering based solution: <a href="https://kevin.gd/PrebakedGlobalIllumination.html">https://kevin.gd/PrebakedGlobalIllumination.html</a>.</p>
+<p>
+<figure><a href="images/fps/fps2.png"><img alt="image 1" src="images/fps/fps2.png" /></a></figure>
+</p>
+<p>
+<figure><a href="images/fps/fps3.png"><img alt="image 2" src="images/fps/fps3.png" /></a></figure>
+</p>
+<p>
+<figure><a href="images/fps/fps4.png"><img alt="image 3" src="images/fps/fps4.png" /></a></figure>
+</p>
+<h3 id="light-probes">Light Probes</h3>
+<p>Dynamic models such as characters are illuminated using light probes baked into the levels. It uses the same Monte Carlo path-tracing shader to collect the indirect bounce lighting from the 6 directions around each light probe. The directional data gives me something similar to Valve's Ambient Cube solution in Half-Life 2. The difference in my solution is that I cache which directional light sources are visible from the light probe and use this later to know which light sources are occluded from that region in space.</p>
+<p>
+<figure><a href="images/fps/fps5.png"><img alt="" src="images/fps/fps5.png" /></a></figure>
+</p>
+<blockquote>
+<p>Before and after model lighting with light probes<br />
+<figure><a href="images/fps/fps6.png"><img alt="model-lighting-comparison" src="images/fps/fps6.png" /></a></figure>
+</p>
+</blockquote>
+<h3 id="level-editor">Level Editor</h3>
+<p><a href="https://www.youtube.com/watch?v=EjHV1p95SDo&amp;ab_channel=KevinChin">Watch Demo on YouTube</a><br />
+<figure><a href="images/fps/fps7.png"><img alt="" src="images/fps/fps7.png" /></a></figure>
+</p>
+<h3 id="particle-system">Particle System</h3>
+<p>
+<figure><a href="images/fps/fps8.gif"><img alt="gibs-compressed-short" src="images/fps/fps8.gif" /></a></figure>
+</p>
+<h3 id="skeletal-animation">Skeletal Animation</h3>
+<p>
+<figure><a href="images/fps/fps9.gif"><img alt="skeletal-animation" src="images/fps/fps9.gif" /></a></figure>
+</p>
+<h3 id="instanced-model-rendering">Instanced model rendering</h3>
+<p>
+<figure><a href="images/fps/fps10.png"><img alt="image" src="images/fps/fps10.png" /></a></figure>
+</p>
+</html>
