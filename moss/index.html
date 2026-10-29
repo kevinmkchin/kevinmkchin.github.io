@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>moss is a terminal and file explorer for Windows</title>
+    <meta name="description" content="moss is a terminal and file explorer for Windows">
+    <link rel="icon" href="moss.ico">
+    <style>
+        /* colors from moss's own "Moss" theme and its icon */
+        :root {
+            --bg: #2E302F;
+            --text: #D3D8CF;
+            --dim: #7A847A;
+            --accent: #A3D977;
+            --mono: "Cascadia Mono", Consolas, monospace;
+        }
+        * { box-sizing: border-box; }
+        html { background: var(--bg); color: var(--text); }
+        body {
+            margin: 0;
+            font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+        main { margin: 0 auto; padding: 0 1.5em 3em; max-width: 46em; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* --- hero: a soft band of misty sage, light at the horizon like a hazy sky, holding the screenshot
+           whole; plain gradients only --- */
+        .sky {
+            padding: 6em 0.5em 5em;
+            margin-bottom: 5em;
+            text-align: center;
+            background:
+                radial-gradient(ellipse 60% 40% at 25% 78%, rgba(232,234,214,0.35), rgba(232,234,214,0) 100%),
+                radial-gradient(ellipse 50% 30% at 80% 30%, rgba(214,226,214,0.18), rgba(214,226,214,0) 100%),
+                linear-gradient(#3F5A55 0%, #5F7A6E 40%, #8FA393 75%, #A9B6A0 100%);
+        }
+        /* icon is near-black, so a faint ring and shadow lift it off the band */
+        .logo {
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.4em;
+            border-radius: 20%;
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.18), 0 0.5em 1.4em rgba(20,30,26,0.3);
+        }
+        /* quiet on purpose: small, light, spaced out */
+        h1 {
+            margin: 0;
+            white-space: nowrap;
+            font-size: clamp(0.95em, 3.6vw, 1.15em);
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.4;
+            color: rgba(255,252,244,0.9);
+            letter-spacing: 0.03em;
+        }
+        h1 .name { font-style: normal; font-weight: 600; color: #FFF; }
+        .install {
+            margin: 1em 0 3.5em;
+            font: 0.8em var(--mono);
+            color: rgba(255,252,244,0.75);
+        }
+        .install .prompt { color: rgba(255,252,244,0.45); }
+        .install .sep { margin: 0 0.8em; color: rgba(255,252,244,0.45); }
+        .install a { color: rgba(255,252,244,0.75); text-decoration: underline; text-underline-offset: 0.2em; }
+
+        /* --- screenshots: moss's headless frames (its tools\site), drawn at half their pixels so all three
+           show text at one size, or smaller when the window is too narrow; corners and shadow added here --- */
+        .frame { display: block; border-radius: 8px; box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 1.2em 3em rgba(0,0,0,0.45); }
+        .shot { width: min(1200px, 100%); margin: 0 auto; box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 1em 2.5em rgba(20,30,26,0.35); }
+        .explorer {
+            width: min(1000px, calc((100vw - 1em) * 1000 / 1200));
+            margin: 0 0 5em 50%;
+            transform: translateX(-50%);
+        }
+
+        /* --- the shell on the desktop wallpaper, the main features list beside it, stacked when narrow --- */
+        .shell {
+            display: grid;
+            grid-template-columns: minmax(0, max-content) minmax(10em, 1fr);
+            align-items: center;
+            gap: 1em 3em;
+            width: min(1150px, calc(100vw - 1em));
+            margin: 0 0 5em 50%;
+            transform: translateX(-50%);
+        }
+        .shell img { width: min(800px, calc((100vw - 1em) * 800 / 1200)); max-width: 100%; }
+        .shell .desk { padding: 0.8em; border-radius: 10px; background: url(desktop.jpg) center 40% / cover; }
+        .shell ul { margin: 0; padding: 0; list-style: none; line-height: 1.4; color: var(--text); }
+        .shell li { margin: 0.6em 0; }
+        @media (max-width: 1000px) {
+            .shell { grid-template-columns: 1fr; }
+            .shell ul { padding: 0 1em; }
+        }
+
+        footer { color: var(--dim); font-size: 0.9em; text-align: center; }
+        footer .credit { margin: 0.4em 0 0; font-size: 0.85em; opacity: 0.7; }
+        footer a { color: inherit; text-decoration: underline; text-underline-offset: 0.15em; }
+    </style>
+</head>
+<body>
+
+    <header class="sky">
+        <img class="logo" src="moss.png" alt="moss icon: a green lambda on black">
+        <h1><span class="name">moss</span> is a terminal and file explorer for Windows</h1>
+        <p class="install"><span class="prompt">&gt;</span> winget install moss<span class="sep">·</span><a href="https://github.com/kevinmkchin/moss">source</a></p>
+        <img class="frame shot" src="screenshot.png" alt="moss with split panes: a Claude Code session at work, another one done, the files of the project below it, and every session in the sidebar">
+    </header>
+
+    <main>
+
+    <img class="frame explorer" src="screenshot-explorer.png" alt="a moss tab turned into its file explorer: a game project's folders with their sizes">
+
+    <section class="shell">
+        <div class="desk"><img class="frame" src="screenshot-shell.png" alt="a moss shell tab on a desktop: clink prompt with the git branch, colored ls, grep, and git's completions listed with descriptions"></div>
+        <ul>
+            <li>faster than Windows Terminal</li>
+            <li>1 ms from keypress to screen</li>
+            <li>switch between terminal and file explorer in every tab</li>
+            <li>split panes, tabs you drag between them</li>
+            <li>tabs keep running in the background</li>
+            <li>tabs survive restarts and reboots</li>
+            <li>Claude Code and other CLI agents, every session in a sidebar</li>
+            <li>folder sizes, measured in the background</li>
+            <li>tab completion and autosuggestions</li>
+            <li>unix tools from Git for Windows</li>
+            <li>search the scrollback</li>
+        </ul>
+    </section>
+
+    <footer>
+        moss is free software under GPL-3.0
+        <p class="credit">Wallpaper by <a href="https://unsplash.com/@intricateexplorer?utm_source=noclip&amp;utm_medium=referral">Intricate Explorer</a> on <a href="https://unsplash.com/?utm_source=noclip&amp;utm_medium=referral">Unsplash</a></p>
+    </footer>
+    </main>
+
+</body>
+</html>
